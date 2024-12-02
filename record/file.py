@@ -20,3 +20,10 @@ async def filing(sink: discord.sinks.Sink, channel: discord.TextChannel, filenam
     await sink.vc.disconnect()
 
     await channel.send(f"녹음이 완료되었습니다. 회의 참여자: {', '.join(recorded_users)}", files=files)
+
+from datetime import datetime
+
+def fileName(role_name, custom=False):
+    if custom:
+        return f"{role_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+    return f"{role_name}_회의록_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"

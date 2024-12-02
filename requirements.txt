@@ -1,0 +1,5 @@
+discord.py
+discord-ext-audiorec
+openai
+pydub
+python-dotenv
