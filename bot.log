@@ -1,0 +1,81 @@
+2024-12-11 19:27:00,164:INFO:discord.client: logging in using static token
+2024-12-11 19:27:00,914:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-11 19:27:01,304:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-7w6q",{"micros":113055,"calls":["id_created",{"micros":993,"calls":[]},"session_lookup_time",{"micros":3587,"calls":[]},"session_lookup_finished",{"micros":21,"calls":[]},"discord-sessions-prd-1-50",{"micros":108246,"calls":["start_session",{"micros":103174,"calls":["discord-api-rpc-85f8bf8575-wnq6k",{"micros":99422,"calls":["get_user",{"micros":5819},"get_guilds",{"micros":5614},"send_scheduled_deletion_message",{"micros":5},"guild_join_requests",{"micros":350},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":47,"calls":[]},"presence_started",{"micros":333,"calls":[]},"guilds_started",{"micros":115,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":4547,"calls":[]},"connect_finished",{"micros":4553,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: ec92b4a33c845c5c60eb5aa660b1aa17).
+2024-12-11 19:27:04,556:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-11 19:27:08,047:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-11 19:27:08,047:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-11 19:27:08,048:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028']
+2024-12-11 19:27:08,048:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-11 19:27:08,049:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-11 19:27:08,049:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-11 19:27:08,050:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-11 19:27:08,050:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-11 19:27:08,346:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-11 19:27:14,315:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-11 19:27:14,316:INFO:discord: 생성된 파일명: 2024-12-11_frontend
+2024-12-11 19:27:14,316:INFO:discord: 회의 파일명: 2024-12-11_frontend
+2024-12-11 19:27:14,317:INFO:discord.voice_client: Connecting to voice...
+2024-12-11 19:27:14,317:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-11 19:27:14,737:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1094.discord.media
+2024-12-11 19:27:14,829:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-11 19:27:14,841:INFO:discord.gateway: received secret key for voice connection
+2024-12-11 19:27:14,843:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-11 19:27:14,843:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-11 19:27:15,128:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-11 19:27:27,070:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-11 19:27:27,079:INFO:discord: 회의 참여자: ['<@423785467767685130>']
+2024-12-11 19:27:27,080:INFO:discord: 423785467767685130의 녹음 파일이 생성되었습니다: 2024-12-11_frontend.wav
+2024-12-11 19:27:27,082:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-11 19:27:27,094:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-11 19:27:27,096:INFO:discord: 봇이 음성 채널에서 연결을 해제했습니다.
+2024-12-11 19:27:27,350:INFO:discord: 회의 종료 메시지가 업데이트되었습니다.
+2024-12-11 19:27:28,582:INFO:discord: 녹음 파일이 채널에 전송되었습니다.
+2024-12-11 19:27:33,354:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-11 19:27:33,355:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-11 19:27:33,356:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028']
+2024-12-11 19:27:33,356:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-11 19:27:33,356:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-11 19:27:33,357:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-11 19:27:33,357:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-11 19:27:33,357:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-11 19:27:33,649:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-11 19:27:46,501:INFO:discord: 사용자에게 회의명 입력을 요청했습니다.
+2024-12-11 19:27:53,354:INFO:discord: 사용자가 입력한 회의명: 오늘의 밥은 무엇을 먹어야 하는가?
+2024-12-11 19:27:53,355:INFO:discord: 생성된 파일명: 2024-12-11_오늘의 밥은 무엇을 먹어야 하는가
+2024-12-11 19:27:53,356:INFO:discord: 회의 파일명: 2024-12-11_오늘의 밥은 무엇을 먹어야 하는가
+2024-12-11 19:27:53,356:INFO:discord.voice_client: Connecting to voice...
+2024-12-11 19:27:53,357:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-11 19:27:53,810:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1094.discord.media
+2024-12-11 19:27:53,906:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-11 19:27:53,916:INFO:discord.gateway: received secret key for voice connection
+2024-12-11 19:27:53,918:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-11 19:27:53,918:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-11 19:27:54,206:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-11 19:28:02,120:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-11 19:28:02,125:INFO:discord: 회의 참여자: ['<@423785467767685130>']
+2024-12-11 19:28:02,125:INFO:discord: 423785467767685130의 녹음 파일이 생성되었습니다: 2024-12-11_오늘의 밥은 무엇을 먹어야 하는가.wav
+2024-12-11 19:28:02,126:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-11 19:28:02,147:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-11 19:28:02,148:INFO:discord: 봇이 음성 채널에서 연결을 해제했습니다.
+2024-12-11 19:28:02,398:INFO:discord: 회의 종료 메시지가 업데이트되었습니다.
+2024-12-11 19:28:03,216:INFO:discord: 녹음 파일이 채널에 전송되었습니다.
+2024-12-11 19:33:21,639:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-11 19:33:21,643:INFO:discord.client: Cleaning up tasks.
+2024-12-11 19:33:21,643:INFO:discord.client: Cleaning up after 1 tasks.
+2024-12-11 19:33:21,645:INFO:discord.client: All tasks finished cancelling.
+2024-12-11 19:33:21,645:INFO:discord.client: Closing the event loop.
+2024-12-11 19:43:12,937:INFO:discord.client: logging in using static token
+2024-12-11 19:43:13,632:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-11 19:43:14,091:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-d2r6",{"micros":226321,"calls":["id_created",{"micros":837,"calls":[]},"session_lookup_time",{"micros":363,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-289",{"micros":223896,"calls":["start_session",{"micros":162420,"calls":["discord-api-rpc-85f8bf8575-56kr7",{"micros":158762,"calls":["get_user",{"micros":6172},"get_guilds",{"micros":7005},"send_scheduled_deletion_message",{"micros":4},"guild_join_requests",{"micros":0},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":33,"calls":[]},"presence_started",{"micros":25786,"calls":[]},"guilds_started",{"micros":119,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":15,"calls":[]},"presence_connect",{"micros":35499,"calls":[]},"connect_finished",{"micros":35516,"calls":[]},"build_ready",{"micros":18,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 73e009f58b2fe2775f80002073d8a4c4).
+2024-12-11 19:43:17,337:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-11 19:43:23,236:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-11 19:43:23,237:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-11 19:43:23,237:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028']
+2024-12-11 19:43:23,238:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-11 19:43:23,238:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-11 19:43:23,238:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-11 19:43:23,239:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-11 19:43:23,239:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-11 19:43:23,615:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-11 19:43:25,110:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-11 19:43:25,111:ERROR:discord: 회의 시작 중 오류 발생: name 'fileName' is not defined
