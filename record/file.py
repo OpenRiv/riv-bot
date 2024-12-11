@@ -1,60 +1,66 @@
-import re
-from datetime import datetime
+# record/file.py
+import discord
 import logging
+import os
+from datetime import datetime
+import re
+from transcribe.processor import TranscriptionProcessor
 
 logger = logging.getLogger('discord')
+processor = TranscriptionProcessor()
 
-# 녹음 파일명
 def fileName(title, custom=False):
     """
-    회의명을 파일명으로 변환합니다.
-    - 불법적인 파일명 문자를 제거
-    - 한글과 영어, 숫자, 언더스코어(_)를 허용
+    회의명을 파일명으로 변환
+    format: YYYY-MM-DD_category
     """
     today = datetime.now().strftime("%Y-%m-%d")
-    if custom:
-        filename = f"{today}_{title}"
-    else:
-        filename = f"{today}_{title}"
+    filename = f"{today}_{title}"
     
     # 소문자로 변환
     filename = filename.lower()
-    # 불법적인 파일명 문자 제거 (<, >, :, ", \, |, ?, *)
+    # 불법적인 파일명 문자 제거
     filename = re.sub(r'[<>:"\\|?*]', '', filename)
     
     logger.info(f"생성된 파일명: {filename}")
     return filename
-
-import discord
-import logging
-
-logger = logging.getLogger('discord')
-
-# 녹음 파일 추출
 async def filing(sink: discord.sinks.Sink, channel: discord.TextChannel, filename, *args):
+    temp_wav = f"{filename}.wav"
+    minutes_filename = f"{filename}_minutes.md"
+
     try:
-        recorded_users = [f"<@{user_id}>" for user_id, audio in sink.audio_data.items()]
-        logger.info(f"회의 참여자: {recorded_users}")
+        # 참가자 정보 수집
+        participants = {str(uid): channel.guild.get_member(uid).name for uid in sink.audio_data.keys()}
+        logger.info(f"회의 참여자: {participants}")
 
-        # 녹음 파일 생성
-        files = []
-        for user_id, audio in sink.audio_data.items():
-            try:
-                # 사용자 ID를 포함한 파일명으로 생성
-                user_filename = f"{filename}.wav"
-                file = discord.File(audio.file, user_filename)
-                files.append(file)
-                logger.info(f"{user_id}의 녹음 파일이 생성되었습니다: {user_filename}")
-            except Exception as e:
-                logger.error(f"파일 생성 중 오류 발생 for user {user_id}: {e}")
+        # 통합 녹음 파일 생성
+        with open(temp_wav, 'wb') as f:
+            first_audio = next(iter(sink.audio_data.values()))
+            f.write(first_audio.file.read())
 
-        # 음성 채널에서 봇 연결 해제
-        await sink.vc.disconnect()
-        logger.info("봇이 음성 채널에서 연결을 해제했습니다.")
+        # 음성을 텍스트로 변환
+        transcription = processor.transcribe_audio(temp_wav)
+        logger.info(f"Transcription 결과: {transcription}")
 
-        # 녹음 파일 전송
-        await channel.send(f"녹음이 완료되었습니다. 회의 참여자: {', '.join(recorded_users)}", files=files)
-        logger.info("녹음 파일이 채널에 전송되었습니다.")
+        # 회의록 생성
+        meeting_info = {'title': filename, 'participants': participants}
+        markdown_content = processor.generate_meeting_minutes(transcription, meeting_info)
+        with open(minutes_filename, 'w', encoding='utf-8') as f:
+            f.write(markdown_content)
+
+        # Discord 채널로 파일 전송
+        files = [discord.File(temp_wav), discord.File(minutes_filename)]
+        await channel.send(
+            f"회의록 생성 완료. 참여자: {', '.join(participants.values())}",
+            files=files
+        )
+
     except Exception as e:
         logger.error(f"filing 함수에서 오류 발생: {e}")
-        await channel.send("❗ 녹음 파일 생성 중 오류가 발생했습니다. 관리자에게 문의해주세요.")
+        await channel.send("❗ 파일 처리 중 오류가 발생했습니다. 관리자에게 문의하세요.")
+    finally:
+        # 임시 파일 삭제
+        for temp_file in [temp_wav, minutes_filename]:
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+                logger.info(f"임시 파일 {temp_file}이 삭제되었습니다.")

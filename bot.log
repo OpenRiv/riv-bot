@@ -79,3 +79,1335 @@
 2024-12-11 19:43:23,615:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
 2024-12-11 19:43:25,110:INFO:discord: Frontend 역할로 회의를 시작합니다.
 2024-12-11 19:43:25,111:ERROR:discord: 회의 시작 중 오류 발생: name 'fileName' is not defined
+2024-12-12 01:12:58,557:INFO:discord.client: logging in using static token
+2024-12-12 01:12:59,440:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 01:13:01,193:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-f2kd",{"micros":1301741,"calls":["id_created",{"micros":742,"calls":[]},"session_lookup_time",{"micros":268,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-1-134",{"micros":1299525,"calls":["start_session",{"micros":1271336,"calls":["discord-api-rpc-5c4fc86745-rjpxc",{"micros":1266293,"calls":["get_user",{"micros":49827},"get_guilds",{"micros":40123},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":510},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":45,"calls":[]},"presence_started",{"micros":14322,"calls":[]},"guilds_started",{"micros":131,"calls":[]},"lobbies_started",{"micros":2,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":13641,"calls":[]},"connect_finished",{"micros":13648,"calls":[]},"build_ready",{"micros":25,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":11,"calls":[]}]}]}] (Session ID: cee253e40693c869a0c0461fa9b1a4d7).
+2024-12-12 01:13:04,492:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 01:13:06,309:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 01:13:06,310:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 01:13:06,310:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028']
+2024-12-12 01:13:06,322:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 01:13:06,322:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 01:13:06,322:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 01:13:06,323:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 01:13:06,323:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 01:13:06,628:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 01:13:08,088:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 01:13:08,089:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 01:13:08,089:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 01:13:08,089:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 01:13:08,089:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 01:13:08,553:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 01:13:08,862:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 01:13:08,902:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 01:13:08,904:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:13:08,905:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:13:09,252:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 01:13:15,269:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 01:13:15,291:INFO:discord: 회의 참여자: ['<@423785467767685130>']
+2024-12-12 01:13:16,869:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:13:16,870:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.437233 seconds
+2024-12-12 01:13:18,333:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:13:18,333:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.751915 seconds
+2024-12-12 01:13:20,527:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:13:20,539:ERROR:discord: Error transcribing audio: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-12 01:13:20,540:ERROR:discord: 파일 처리 중 오류 발생 for user 423785467767685130: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-12 01:13:20,541:INFO:discord: Successfully generated meeting minutes
+2024-12-12 01:13:20,542:INFO:discord: Successfully saved meeting minutes to 2024-12-12_frontend_minutes.md
+2024-12-12 01:13:20,543:INFO:discord: 회의 종료 메시지가 업데이트되었습니다.
+2024-12-12 01:13:20,544:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-12 01:13:20,582:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 01:13:20,583:INFO:discord: 봇이 음성 채널에서 연결을 해제했습니다.
+2024-12-12 01:13:21,996:INFO:discord: 임시 파일 삭제됨: temp_423785467767685130_2024-12-12_frontend.wav
+2024-12-12 01:13:21,997:INFO:discord: 임시 파일 삭제됨: 2024-12-12_frontend_minutes.md
+2024-12-12 01:13:21,997:INFO:discord: 녹음 파일과 회의록이 채널에 전송되었습니다.
+2024-12-12 01:15:55,771:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 01:15:55,772:INFO:discord.client: Cleaning up tasks.
+2024-12-12 01:15:55,772:INFO:discord.client: Cleaning up after 1 tasks.
+2024-12-12 01:15:55,773:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 01:15:55,774:INFO:discord.client: Closing the event loop.
+2024-12-12 01:16:00,936:INFO:discord.client: logging in using static token
+2024-12-12 01:16:01,823:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 01:16:02,324:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-tvtn",{"micros":100275,"calls":["id_created",{"micros":760,"calls":[]},"session_lookup_time",{"micros":376,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-167",{"micros":98830,"calls":["start_session",{"micros":52895,"calls":["discord-api-rpc-5c4fc86745-692d4",{"micros":48838,"calls":["get_user",{"micros":9058},"get_guilds",{"micros":5764},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":271},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":39,"calls":[]},"presence_started",{"micros":359,"calls":[]},"guilds_started",{"micros":168,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":45336,"calls":[]},"connect_finished",{"micros":45343,"calls":[]},"build_ready",{"micros":21,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: ebe618b584af01a82071d8e0828f42ff).
+2024-12-12 01:16:05,833:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 01:16:09,348:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 01:16:09,348:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 01:16:09,348:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028']
+2024-12-12 01:16:09,349:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 01:16:09,349:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 01:16:09,349:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 01:16:09,349:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 01:16:09,350:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 01:16:09,637:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 01:16:14,442:INFO:discord: Design 역할로 회의를 시작합니다.
+2024-12-12 01:16:14,442:INFO:discord: 생성된 파일명: 2024-12-12_design
+2024-12-12 01:16:14,443:INFO:discord: 회의 파일명: 2024-12-12_design
+2024-12-12 01:16:14,443:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 01:16:14,444:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 01:16:14,922:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 01:16:15,102:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 01:16:15,131:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 01:16:15,132:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:16:15,133:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:16:15,433:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 01:16:33,034:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 01:16:33,038:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028', '655556620822118430': 'youulaeria'}
+2024-12-12 01:16:36,226:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:16:36,227:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.431809 seconds
+2024-12-12 01:16:38,727:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:16:38,728:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.839929 seconds
+2024-12-12 01:16:41,447:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:16:41,448:ERROR:discord: Error transcribing audio: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-12 01:16:41,448:ERROR:discord: filing 함수에서 오류 발생: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-12 01:16:41,853:ERROR:discord: 회의 종료 중 오류 발생: 404 Not Found (error code: 10062): Unknown interaction
+2024-12-12 01:38:16,257:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 01:38:16,257:INFO:discord.client: Cleaning up tasks.
+2024-12-12 01:38:16,258:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 01:38:16,258:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 01:38:16,259:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 01:38:16,260:INFO:discord.client: Closing the event loop.
+2024-12-12 01:46:54,118:INFO:discord.client: logging in using static token
+2024-12-12 01:46:55,027:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 01:46:55,356:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-89sp",{"micros":63234,"calls":["id_created",{"micros":690,"calls":[]},"session_lookup_time",{"micros":512,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-1-281",{"micros":61264,"calls":["start_session",{"micros":46376,"calls":["discord-api-rpc-cb657649d-22vgn",{"micros":40459,"calls":["get_user",{"micros":5552},"get_guilds",{"micros":5551},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":41,"calls":[]},"presence_started",{"micros":461,"calls":[]},"guilds_started",{"micros":147,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":14206,"calls":[]},"connect_finished",{"micros":14213,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 1b2e627f13fbcb5e0e2b0e0ab0d4b719).
+2024-12-12 01:46:58,645:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 01:46:59,822:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 01:46:59,824:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 01:46:59,824:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 01:46:59,824:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 01:46:59,825:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 01:46:59,825:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 01:46:59,825:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 01:46:59,826:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 01:47:00,133:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 01:47:02,934:INFO:discord: Backend 역할로 회의를 시작합니다.
+2024-12-12 01:47:02,935:INFO:discord: 생성된 파일명: 2024-12-12_backend
+2024-12-12 01:47:02,935:INFO:discord: 회의 파일명: 2024-12-12_backend
+2024-12-12 01:47:02,936:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 01:47:02,936:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 01:47:03,384:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 01:47:03,594:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 01:47:03,629:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 01:47:03,631:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:47:03,632:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:47:03,940:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 01:47:07,070:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 01:47:07,081:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028'}
+2024-12-12 01:47:08,425:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:47:08,426:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.451363 seconds
+2024-12-12 01:47:09,496:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:47:09,496:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.952770 seconds
+2024-12-12 01:47:11,020:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:47:11,022:ERROR:discord: Error transcribing audio: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-12 01:47:11,023:ERROR:discord: filing 함수에서 오류 발생: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-12 01:47:11,026:INFO:discord: 회의 종료 메시지가 업데이트되었습니다.
+2024-12-12 01:50:41,579:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 01:50:41,580:INFO:discord.client: Cleaning up tasks.
+2024-12-12 01:50:41,580:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 01:50:41,581:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 01:50:41,582:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 01:50:41,583:INFO:discord.client: Closing the event loop.
+2024-12-12 01:50:45,306:INFO:discord.client: logging in using static token
+2024-12-12 01:50:46,250:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 01:50:46,649:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-3ffk",{"micros":148346,"calls":["id_created",{"micros":969,"calls":[]},"session_lookup_time",{"micros":1396,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-152",{"micros":145713,"calls":["start_session",{"micros":128560,"calls":["discord-api-rpc-cb657649d-l86ms",{"micros":124214,"calls":["get_user",{"micros":6065},"get_guilds",{"micros":22436},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":441},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":36,"calls":[]},"presence_started",{"micros":11246,"calls":[]},"guilds_started",{"micros":145,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5689,"calls":[]},"connect_finished",{"micros":5694,"calls":[]},"build_ready",{"micros":28,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: f49326542a4435b6a363d4d2290d33c3).
+2024-12-12 01:50:50,020:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 01:50:51,626:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 01:50:51,627:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 01:50:51,627:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 01:50:51,627:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 01:50:51,628:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 01:50:51,628:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 01:50:51,628:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 01:50:51,628:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 01:50:51,955:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 01:50:54,488:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 01:50:54,489:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 01:50:54,489:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 01:50:54,490:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 01:50:54,490:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 01:50:54,939:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 01:50:55,129:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 01:50:55,159:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 01:50:55,162:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:50:55,163:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:50:55,519:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 01:51:01,634:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 01:51:01,637:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028'}
+2024-12-12 01:51:02,709:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:51:02,710:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.391478 seconds
+2024-12-12 01:51:05,764:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 01:51:05,775:INFO:discord: Successfully transcribed audio file: 2024-12-12_frontend.wav
+2024-12-12 01:51:05,776:INFO:discord: Successfully generated meeting minutes
+2024-12-12 01:51:05,778:INFO:discord: 회의 종료 메시지가 업데이트되었습니다.
+2024-12-12 01:51:05,780:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-12 01:51:05,819:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 01:51:05,822:INFO:discord: 봇이 음성 채널에서 연결을 해제했습니다.
+2024-12-12 01:51:07,592:INFO:discord: 임시 파일이 삭제되었습니다.
+2024-12-12 01:57:36,661:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 01:57:36,661:INFO:discord.client: Cleaning up tasks.
+2024-12-12 01:57:36,662:INFO:discord.client: Cleaning up after 1 tasks.
+2024-12-12 01:57:36,662:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 01:57:36,663:INFO:discord.client: Closing the event loop.
+2024-12-12 01:57:42,137:INFO:discord.client: logging in using static token
+2024-12-12 01:57:43,294:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 01:57:43,694:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-thmm",{"micros":86991,"calls":["id_created",{"micros":983,"calls":[]},"session_lookup_time",{"micros":272,"calls":[]},"session_lookup_finished",{"micros":29,"calls":[]},"discord-sessions-prd-1-66",{"micros":84344,"calls":["start_session",{"micros":67690,"calls":["discord-api-rpc-cb657649d-kfwlr",{"micros":63503,"calls":["get_user",{"micros":26340},"get_guilds",{"micros":3360},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":270},"authorized_ip_coro",{"micros":12}]}]},"starting_guild_connect",{"micros":41,"calls":[]},"presence_started",{"micros":3964,"calls":[]},"guilds_started",{"micros":131,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":9,"calls":[]},"presence_connect",{"micros":12481,"calls":[]},"connect_finished",{"micros":12494,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 55928a240b649ba9478e1d82a67b2622).
+2024-12-12 01:57:47,012:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 01:57:49,611:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 01:57:49,612:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 01:57:49,613:WARNING:discord: 사용자가 음성 채널에 접속하지 않았습니다.
+2024-12-12 01:58:00,409:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 01:58:00,410:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 01:58:00,410:INFO:discord: 🔍 다른 사용자 목록: ['youulaeria', 'yuna_1028']
+2024-12-12 01:58:00,410:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 01:58:00,411:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 01:58:00,411:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 01:58:00,411:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 01:58:00,411:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 01:58:00,757:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 01:58:02,286:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 01:58:02,287:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 01:58:02,287:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 01:58:02,288:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 01:58:02,288:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 01:58:02,766:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 01:58:03,124:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 01:58:03,228:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 01:58:03,234:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:58:03,234:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 01:58:03,588:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 01:58:47,593:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 01:58:47,607:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028', '655556620822118430': 'youulaeria'}
+2024-12-12 01:58:54,182:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:58:54,183:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.408900 seconds
+2024-12-12 01:58:58,095:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 10 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 47, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 20, in transcribe_audio
+    transcript = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 01:59:00,601:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 01:59:00,602:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.957580 seconds
+2024-12-12 01:59:08,106:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 20 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 47, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 20, in transcribe_audio
+    transcript = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1258, in recv
+    return self.read(buflen)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1131, in read
+    return self._sslobj.read(len)
+
+2024-12-12 01:59:10,880:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 01:59:10,884:INFO:discord: Successfully transcribed audio file: 2024-12-12_frontend.wav
+2024-12-12 01:59:10,885:ERROR:discord: filing 함수에서 오류 발생: 'str' object has no attribute 'get'
+2024-12-12 01:59:11,303:ERROR:discord: 회의 종료 중 오류 발생: 404 Not Found (error code: 10062): Unknown interaction
+2024-12-12 02:02:03,210:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:02:03,210:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:02:03,211:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 02:02:03,212:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:02:03,213:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:02:03,213:INFO:discord.client: Closing the event loop.
+2024-12-12 02:02:09,936:INFO:discord.client: logging in using static token
+2024-12-12 02:02:10,820:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:02:11,198:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-pzjk",{"micros":116350,"calls":["id_created",{"micros":982,"calls":[]},"session_lookup_time",{"micros":328,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-250",{"micros":114696,"calls":["start_session",{"micros":99582,"calls":["discord-api-rpc-cb657649d-cfzpd",{"micros":92195,"calls":["get_user",{"micros":6356},"get_guilds",{"micros":5688},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":39,"calls":[]},"presence_started",{"micros":494,"calls":[]},"guilds_started",{"micros":126,"calls":[]},"lobbies_started",{"micros":2,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":14423,"calls":[]},"connect_finished",{"micros":14430,"calls":[]},"build_ready",{"micros":19,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 55e47d19b65c948304078b51b5979f90).
+2024-12-12 02:02:14,478:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:02:16,807:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:02:16,808:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:02:16,808:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:02:16,809:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:02:16,809:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:02:16,809:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:02:16,810:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:02:16,810:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:02:17,120:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:02:19,387:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 02:02:19,388:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 02:02:19,388:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 02:02:19,388:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:02:19,389:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:02:19,836:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:02:20,103:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:02:20,157:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:02:20,158:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:02:20,159:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:02:20,495:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 02:02:58,402:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 02:02:58,415:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028', '655556620822118430': 'youulaeria'}
+2024-12-12 02:03:03,154:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 02:03:03,155:INFO:discord: Successfully transcribed audio file: 2024-12-12_frontend.wav
+2024-12-12 02:03:03,156:INFO:discord: Transcription 결과: 근데 거기 뭐라고 하지? 카운터? 그쪽에서 왜 이렇게 통화해도 돼?
+2024-12-12 02:03:03,156:INFO:discord: Successfully generated meeting minutes
+2024-12-12 02:03:03,557:ERROR:discord: 회의 종료 중 오류 발생: 404 Not Found (error code: 10062): Unknown interaction
+2024-12-12 02:03:07,373:INFO:discord: 임시 파일 2024-12-12_frontend.wav이 삭제되었습니다.
+2024-12-12 02:03:07,373:INFO:discord: 임시 파일 2024-12-12_frontend_minutes.md이 삭제되었습니다.
+2024-12-12 02:10:06,679:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:10:06,680:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:10:06,680:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 02:10:06,681:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:10:06,682:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:10:06,683:INFO:discord.client: Closing the event loop.
+2024-12-12 02:10:10,805:INFO:discord.client: logging in using static token
+2024-12-12 02:10:11,725:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:10:12,041:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-39bq",{"micros":47497,"calls":["id_created",{"micros":703,"calls":[]},"session_lookup_time",{"micros":259,"calls":[]},"session_lookup_finished",{"micros":27,"calls":[]},"discord-sessions-prd-1-64",{"micros":45329,"calls":["start_session",{"micros":41915,"calls":["discord-api-rpc-cb657649d-p4m2d",{"micros":37772,"calls":["get_user",{"micros":4827},"get_guilds",{"micros":2524},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":669},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":40,"calls":[]},"presence_started",{"micros":336,"calls":[]},"guilds_started",{"micros":176,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":2832,"calls":[]},"connect_finished",{"micros":2836,"calls":[]},"build_ready",{"micros":23,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 3a68f25956bb00a33aa5003014b1d409).
+2024-12-12 02:10:15,322:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:10:20,090:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:10:20,091:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:10:20,091:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:10:20,092:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:10:20,092:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:10:20,092:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:10:20,092:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:10:20,093:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:10:20,403:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:10:28,140:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 02:10:28,141:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 02:10:28,141:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 02:10:28,142:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:10:28,142:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:10:28,608:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:10:28,911:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:10:28,956:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:10:28,958:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:10:28,959:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:10:29,297:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 02:11:16,212:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 02:11:16,231:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028', '655556620822118430': 'youulaeria'}
+2024-12-12 02:11:28,812:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 02:11:28,814:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.455047 seconds
+2024-12-12 02:11:28,914:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 10 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 21, in transcribe_audio
+    transcript = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1093, in _retry_request
+    time.sleep(timeout)
+
+2024-12-12 02:11:36,482:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 02:11:36,484:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.863509 seconds
+2024-12-12 02:11:38,927:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 20 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 21, in transcribe_audio
+    transcript = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:11:42,218:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 02:11:42,220:ERROR:discord: Error transcribing audio: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-12 02:11:42,221:ERROR:discord: filing 함수에서 오류 발생: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-12 02:11:42,591:ERROR:discord: 회의 종료 중 오류 발생: 404 Not Found (error code: 10062): Unknown interaction
+2024-12-12 02:11:42,666:INFO:discord: 임시 파일 2024-12-12_frontend.wav이 삭제되었습니다.
+2024-12-12 02:14:52,377:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:14:52,377:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:14:52,378:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 02:14:52,379:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:14:52,380:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:14:52,380:INFO:discord.client: Closing the event loop.
+2024-12-12 02:14:56,128:INFO:discord.client: logging in using static token
+2024-12-12 02:14:57,000:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:14:57,381:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-m3tf",{"micros":122207,"calls":["id_created",{"micros":1151,"calls":[]},"session_lookup_time",{"micros":307,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-1-224",{"micros":120399,"calls":["start_session",{"micros":100894,"calls":["discord-api-rpc-cb657649d-c87p2",{"micros":97075,"calls":["get_user",{"micros":10772},"get_guilds",{"micros":12151},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":406},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":30,"calls":[]},"presence_started",{"micros":9469,"calls":[]},"guilds_started",{"micros":180,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":9796,"calls":[]},"connect_finished",{"micros":9802,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 04c659782b2402cdc3ce18088347e63b).
+2024-12-12 02:15:00,655:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:15:05,348:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:15:05,349:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:15:05,349:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:15:05,350:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:15:05,350:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:15:05,350:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:15:05,350:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:15:05,351:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:15:05,638:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:15:07,722:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 02:15:07,722:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 02:15:07,723:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 02:15:07,723:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:15:07,723:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:15:08,166:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:15:08,426:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:15:08,471:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:15:08,473:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:15:08,474:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:15:08,984:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 02:16:11,741:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 02:16:11,749:INFO:discord: 회의 참여자: {'655556620822118430': 'youulaeria', '423785467767685130': 'yuna_1028'}
+2024-12-12 02:16:11,756:INFO:discord: Starting audio transcription...
+2024-12-12 02:16:19,728:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 02:16:19,729:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.450068 seconds
+2024-12-12 02:16:23,463:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 10 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 29, in transcribe_audio
+    transcript = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:16:28,011:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 02:16:28,012:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.771735 seconds
+2024-12-12 02:16:29,528:WARNING:discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 29, in transcribe_audio
+    transcript = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:16:33,476:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 20 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 29, in transcribe_audio
+    transcript = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1046, in _request
+    return self._retry_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1095, in _retry_request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:16:39,287:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 02:16:39,288:INFO:discord: Successfully transcribed audio file: 2024-12-12_frontend.wav
+2024-12-12 02:16:39,288:ERROR:discord: Error transcribing audio: 'Transcription' object has no attribute 'get'
+2024-12-12 02:16:39,288:ERROR:discord: filing 함수에서 오류 발생: 'Transcription' object has no attribute 'get'
+2024-12-12 02:16:39,290:INFO:discord.gateway: Websocket closed with 1000, cannot reconnect.
+2024-12-12 02:16:39,291:ERROR:discord.client: Attempting a reconnect in 1.35s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 617, in connect
+    await self.ws.poll_event()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 630, in poll_event
+    raise ConnectionClosed(
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-12-12 02:16:39,293:ERROR:discord.voice_client: Disconnected from voice... Reconnecting in 0.16s.
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client_ws.py", line 334, in receive
+    msg = await self._reader.read()
+  File "aiohttp\\_websocket\\reader_c.py", line 112, in read
+  File "aiohttp\\_websocket\\reader_c.py", line 109, in aiohttp._websocket.reader_c.WebSocketDataQueue.read
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 456, in wait_for
+    return fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\voice_client.py", line 467, in poll_voice_ws
+    await self.ws.poll_event()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 943, in poll_event
+    msg = await asyncio.wait_for(self.ws.receive(), timeout=30.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 458, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+2024-12-12 02:16:39,480:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:16:39,480:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:16:39,481:INFO:discord.voice_client: Starting voice handshake... (connection attempt 2)
+2024-12-12 02:16:39,707:INFO:discord: 임시 파일 2024-12-12_frontend.wav이 삭제되었습니다.
+2024-12-12 02:16:39,712:ERROR:discord: 회의 종료 중 오류 발생: 404 Not Found (error code: 10062): Unknown interaction
+2024-12-12 02:16:41,135:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2024-12-12 02:16:41,419:INFO:discord.gateway: Shard ID None has successfully RESUMED session 04c659782b2402cdc3ce18088347e63b under trace ["gateway-prd-us-east1-d-0bxb",{"micros":31238,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":272,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-1-224",{"micros":25}]}].
+2024-12-12 02:17:09,341:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2024-12-12 02:17:39,506:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:17:39,507:WARNING:discord.voice_client: Could not connect to voice... Retrying...
+2024-12-12 02:17:39,507:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-12 02:19:35,720:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:19:35,721:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:19:35,721:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 02:19:35,722:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:19:35,722:INFO:discord.client: Closing the event loop.
+2024-12-12 02:19:40,083:INFO:discord.client: logging in using static token
+2024-12-12 02:19:41,076:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:19:41,442:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-fr1v",{"micros":86089,"calls":["id_created",{"micros":748,"calls":[]},"session_lookup_time",{"micros":1909,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-1-201",{"micros":83129,"calls":["start_session",{"micros":63550,"calls":["discord-api-rpc-cb657649d-gd99x",{"micros":60084,"calls":["get_user",{"micros":5248},"get_guilds",{"micros":2320},"send_scheduled_deletion_message",{"micros":5},"guild_join_requests",{"micros":193},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":62,"calls":[]},"presence_started",{"micros":323,"calls":[]},"guilds_started",{"micros":163,"calls":[]},"lobbies_started",{"micros":4,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":18998,"calls":[]},"connect_finished",{"micros":19004,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 6ecfb4eaf2d78f376fd3281692de6b3e).
+2024-12-12 02:19:44,760:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:20:00,952:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:20:00,952:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:20:00,952:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:20:00,953:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:20:00,953:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:20:00,953:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:20:00,953:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:20:00,954:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:20:01,324:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:20:03,649:INFO:discord: Design 역할로 회의를 시작합니다.
+2024-12-12 02:20:03,650:INFO:discord: 생성된 파일명: 2024-12-12_design
+2024-12-12 02:20:03,650:INFO:discord: 회의 파일명: 2024-12-12_design
+2024-12-12 02:20:03,651:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:20:03,651:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:20:04,666:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:20:05,023:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:20:05,074:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:20:05,076:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:20:05,077:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:20:05,429:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 02:20:47,837:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 02:20:47,847:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028', '655556620822118430': 'youulaeria'}
+2024-12-12 02:21:00,011:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 10 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 26, in transcribe_audio
+    response = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:21:10,024:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 20 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 26, in transcribe_audio
+    response = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:21:13,655:WARNING:discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 26, in transcribe_audio
+    response = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:21:20,039:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 30 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 26, in transcribe_audio
+    response = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1258, in recv
+    return self.read(buflen)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1131, in read
+    return self._sslobj.read(len)
+
+2024-12-12 02:21:21,399:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 02:21:21,401:ERROR:discord: Unexpected response structure: Transcription(text='이제 슬슬 메이크업 툴로 공부해볼래 음 진짜 아는게 많다 오오오오 음 좋아요')
+2024-12-12 02:21:21,402:ERROR:discord: Error transcribing audio (attempt 1/5): Response does not contain 'text' field.
+2024-12-12 02:21:23,676:WARNING:discord.gateway: Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 26, in transcribe_audio
+    response = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:21:27,883:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 02:21:27,885:ERROR:discord: Unexpected response structure: Transcription(text='이제 슬슬 메이크업 툴로 공부해볼래 음 진짜 아는게 많다 오오오오 음 좋아요')
+2024-12-12 02:21:27,886:ERROR:discord: Error transcribing audio (attempt 2/5): Response does not contain 'text' field.
+2024-12-12 02:21:30,049:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 40 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 26, in transcribe_audio
+    response = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:21:33,693:WARNING:discord.gateway: Shard ID None heartbeat blocked for more than 30 seconds.
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 26, in transcribe_audio
+    response = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1258, in recv
+    return self.read(buflen)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1131, in read
+    return self._sslobj.read(len)
+
+2024-12-12 02:21:33,954:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 02:21:33,956:ERROR:discord: Unexpected response structure: Transcription(text='이제 슬슬 메이크업 툴로 공부해볼래 음 진짜 아는게 많다 오오오오 음 좋아요')
+2024-12-12 02:21:33,956:ERROR:discord: Error transcribing audio (attempt 3/5): Response does not contain 'text' field.
+2024-12-12 02:21:40,067:WARNING:discord.gateway: Shard ID None voice heartbeat blocked for more than 50 seconds
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 26, in transcribe_audio
+    response = self.client.audio.transcriptions.create(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\resources\audio\transcriptions.py", line 188, in create
+    return self._post(  # type: ignore[return-value]
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 957, in request
+    return self._request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\openai\_base_client.py", line 993, in _request
+    response = self._client.send(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 88, in handle_request
+    self._send_request_body(**kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 159, in _send_request_body
+    self._send_event(event, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_sync\http11.py", line 166, in _send_event
+    self._network_stream.write(bytes_to_send, timeout=timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\httpcore\_backends\sync.py", line 138, in write
+    n = self._sock.send(buffer)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\ssl.py", line 1205, in send
+    return self._sslobj.write(data)
+
+2024-12-12 02:21:42,646:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 02:21:42,647:ERROR:discord: Unexpected response structure: Transcription(text='이제 슬슬 메이크업 툴로 공부해볼래 음 진짜 아는게 많다 오오오오 음 좋아요')
+2024-12-12 02:21:42,648:ERROR:discord: Error transcribing audio (attempt 4/5): Response does not contain 'text' field.
+2024-12-12 02:21:43,708:WARNING:discord.gateway: Shard ID None heartbeat blocked for more than 40 seconds.
+Loop thread traceback (most recent call last):
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\bot.py", line 70, in <module>
+    bot.run(TOKEN)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 772, in run
+    loop.run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\record\file.py", line 42, in filing
+    transcription = processor.transcribe_audio(temp_wav)
+  File "c:\Users\tori1\OneDrive\바탕 화면\os\riv-bot\transcribe\processor.py", line 43, in transcribe_audio
+    time.sleep(retry_delay)
+
+2024-12-12 02:21:47,476:INFO:discord: 임시 파일 2024-12-12_design.wav이 삭제되었습니다.
+2024-12-12 02:21:47,476:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:21:47,477:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:21:47,477:INFO:discord.client: Cleaning up after 5 tasks.
+2024-12-12 02:21:47,478:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:21:47,491:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:21:47,492:INFO:discord.client: Closing the event loop.
+2024-12-12 02:22:02,772:INFO:discord.client: logging in using static token
+2024-12-12 02:22:03,724:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:22:04,062:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-9m0d",{"micros":83599,"calls":["id_created",{"micros":814,"calls":[]},"session_lookup_time",{"micros":3109,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-232",{"micros":79333,"calls":["start_session",{"micros":39145,"calls":["discord-api-rpc-cb657649d-pss7r",{"micros":34690,"calls":["get_user",{"micros":5058},"get_guilds",{"micros":3230},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":30,"calls":[]},"presence_started",{"micros":7468,"calls":[]},"guilds_started",{"micros":149,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":32507,"calls":[]},"connect_finished",{"micros":32513,"calls":[]},"build_ready",{"micros":24,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 0622729bd197f3e04058c10683f2d954).
+2024-12-12 02:22:05,628:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:22:05,629:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:22:05,629:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:22:05,629:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:22:05,630:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:22:05,630:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:22:05,630:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:22:05,630:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:22:05,928:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:22:07,358:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:22:07,882:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 02:22:07,883:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 02:22:07,883:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 02:22:07,884:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:22:07,885:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:22:08,321:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:22:08,531:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:22:08,562:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:22:08,565:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:22:08,565:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:22:08,921:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 02:22:17,599:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 02:22:17,608:INFO:discord: 회의 참여자: {'655556620822118430': 'youulaeria', '423785467767685130': 'yuna_1028'}
+2024-12-12 02:22:20,543:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 02:22:20,544:INFO:discord: Successfully transcribed audio file: 2024-12-12_frontend.wav
+2024-12-12 02:22:20,545:INFO:discord: Transcription 결과: 안녕하세요. 리부브테스트입니다.
+2024-12-12 02:22:20,545:INFO:discord: Successfully generated meeting minutes
+2024-12-12 02:22:20,553:INFO:discord: 회의 종료 메시지가 업데이트되었습니다.
+2024-12-12 02:22:22,168:INFO:discord: 임시 파일 2024-12-12_frontend.wav이 삭제되었습니다.
+2024-12-12 02:22:22,169:INFO:discord: 임시 파일 2024-12-12_frontend_minutes.md이 삭제되었습니다.
+2024-12-12 02:23:00,493:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:23:00,494:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:23:00,494:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:23:00,495:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:23:00,495:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:23:00,495:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:23:00,495:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:23:00,496:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:23:00,812:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:23:03,112:INFO:discord: Backend 역할로 회의를 시작합니다.
+2024-12-12 02:23:03,113:INFO:discord: 생성된 파일명: 2024-12-12_backend
+2024-12-12 02:23:03,114:INFO:discord: 회의 파일명: 2024-12-12_backend
+2024-12-12 02:23:03,114:ERROR:discord: 회의 시작 중 오류 발생: Already connected to a voice channel.
+2024-12-12 02:23:11,913:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:23:11,914:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:23:11,914:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:23:11,915:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:23:11,915:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:23:11,915:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:23:11,916:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:23:11,916:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:23:12,318:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:23:14,562:INFO:discord: Backend 역할로 회의를 시작합니다.
+2024-12-12 02:23:14,563:INFO:discord: 생성된 파일명: 2024-12-12_backend
+2024-12-12 02:23:14,563:INFO:discord: 회의 파일명: 2024-12-12_backend
+2024-12-12 02:23:14,564:ERROR:discord: 회의 시작 중 오류 발생: Already connected to a voice channel.
+2024-12-12 02:23:36,066:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:23:36,066:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:23:36,067:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 02:23:36,067:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:23:36,069:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:23:36,069:INFO:discord.client: Closing the event loop.
+2024-12-12 02:23:43,997:INFO:discord.client: logging in using static token
+2024-12-12 02:23:45,193:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:23:45,547:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-dn4f",{"micros":92510,"calls":["id_created",{"micros":899,"calls":[]},"session_lookup_time",{"micros":299,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-1",{"micros":90939,"calls":["start_session",{"micros":37267,"calls":["discord-api-rpc-cb657649d-btqpq",{"micros":33012,"calls":["get_user",{"micros":5363},"get_guilds",{"micros":2737},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":707},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":43,"calls":[]},"presence_started",{"micros":14567,"calls":[]},"guilds_started",{"micros":183,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":38847,"calls":[]},"connect_finished",{"micros":38853,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 87da7e7bf6c2308009ea3773406144f4).
+2024-12-12 02:23:48,822:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:24:15,364:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:24:15,364:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:24:15,365:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:24:15,365:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:24:15,366:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:24:15,366:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:24:15,366:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:24:15,366:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:24:15,700:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:24:16,971:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 02:24:16,972:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 02:24:16,972:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 02:24:16,973:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:24:16,973:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:24:17,453:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:24:17,641:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:24:17,671:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:24:17,673:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:24:17,674:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:24:17,968:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 02:24:35,523:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 02:24:35,538:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028', '655556620822118430': 'youulaeria'}
+2024-12-12 02:24:41,452:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-12-12 02:24:41,453:INFO:discord: Successfully transcribed audio file: 2024-12-12_frontend.wav
+2024-12-12 02:24:41,453:INFO:discord: Transcription 결과: 안녕하세요. 리부브 테스트입니다. 안녕하세요. 리부브 테스트입니다. 잘 들리십니까?
+2024-12-12 02:24:41,454:INFO:discord: Successfully generated meeting minutes
+2024-12-12 02:24:41,871:ERROR:discord: 회의 종료 중 오류 발생: 404 Not Found (error code: 10062): Unknown interaction
+2024-12-12 02:24:44,804:INFO:discord: 임시 파일 2024-12-12_frontend.wav이 삭제되었습니다.
+2024-12-12 02:24:44,805:INFO:discord: 임시 파일 2024-12-12_frontend_minutes.md이 삭제되었습니다.
+2024-12-12 02:24:58,785:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:24:58,786:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:24:58,786:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 02:24:58,787:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:24:58,788:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:24:58,788:INFO:discord.client: Closing the event loop.
