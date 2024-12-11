@@ -22,3 +22,7 @@ async def on_ready():
     print(f'{bot.user}로 로그인되었습니다!')
 
 bot.run(TOKEN)
+
+#초기 세팅
+# python 3.10.4
+# pip install -r requirements.txt
