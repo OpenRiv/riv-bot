@@ -10,7 +10,7 @@ import logging
 
 # 로깅 설정
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,  # INFO에서 DEBUG로 변경
     format='%(asctime)s:%(levelname)s:%(name)s: %(message)s',
     handlers=[
         logging.FileHandler(filename='bot.log', encoding='utf-8', mode='a'),

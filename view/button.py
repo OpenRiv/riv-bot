@@ -175,6 +175,8 @@ class MeetingView(discord.ui.View):
                 view=None
             )
 
+# MeetingView 클래스 외부에 정의된 함수들
+
 async def start_meeting(view, filename):
     """
     녹음을 시작하는 함수입니다.
@@ -189,6 +191,7 @@ async def start_meeting(view, filename):
         vc = await channel.connect()
     except discord.ClientException:
         vc = channel.guild.voice_client
+
     sink = MySink()
     view.sink = sink  # sink 인스턴스를 MeetingView에 저장
 
@@ -196,7 +199,7 @@ async def start_meeting(view, filename):
     vc.start_recording(
         sink,
         lambda sink, _: asyncio.run_coroutine_threadsafe(
-            finished_recording(sink, view, filename), 
+            finished_recording(sink, view, filename),
             view.ctx.bot.loop
         )
     )

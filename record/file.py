@@ -13,24 +13,36 @@ logger = logging.getLogger('discord')
 class MySink(Sink):
     def __init__(self):
         super().__init__()
-        self.audio_data = {}  # 사용자별 오디오 데이터를 저장할 딕셔너리
+        self.audio_data = {}  # user_id: BytesIO
 
     def write_to_user(self, user, data):
         if user.id not in self.audio_data:
             self.audio_data[user.id] = BytesIO()
-        # 'data'가 AudioData 객체인지 확인
         logger.debug(f"write_to_user called with data type: {type(data)}")
-        try:
-            # AudioData 객체에서 raw bytes 추출
-            raw_data = data.read()
-            logger.debug(f"Extracted raw_data of length {len(raw_data)} bytes from AudioData")
-        except AttributeError:
-            # AudioData 객체에 'read' 메서드가 없을 경우
-            logger.error(f"'AudioData' object has no 'read' method: {type(data)}")
+        logger.debug(f"AudioData attributes: {dir(data)}")  # AudioData 객체의 속성 로그
+
+        # AudioData 객체에서 raw PCM 데이터 추출
+        if hasattr(data, 'frame_data') and isinstance(data.frame_data, bytes):
+            raw_data = data.frame_data
+            logger.debug(f"Extracted raw_data of length {len(raw_data)} bytes from data.frame_data")
+        elif hasattr(data, 'pcm') and isinstance(data.pcm, bytes):
+            raw_data = data.pcm
+            logger.debug(f"Extracted raw_data of length {len(raw_data)} bytes from data.pcm")
+        elif hasattr(data, 'read') and callable(data.read):
+            try:
+                raw_data = data.read()
+                if isinstance(raw_data, bytes):
+                    logger.debug(f"Extracted raw_data of length {len(raw_data)} bytes from data.read()")
+                else:
+                    logger.error(f"data.read() did not return bytes, got {type(raw_data)}")
+                    return
+            except Exception as e:
+                logger.error(f"Error reading from data: {e}")
+                return
+        else:
+            logger.error(f"Unexpected data format in write_to_user: {type(data)}")
             return
-        except Exception as e:
-            logger.error(f"Error extracting raw_data from AudioData: {e}")
-            return
+
         self.audio_data[user.id].write(raw_data)
         logger.debug(f"Wrote {len(raw_data)} bytes to BytesIO for user_id: {user.id}")
 
