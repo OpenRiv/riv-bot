@@ -157,30 +157,46 @@ class MeetingView(discord.ui.View):
             logger.info("회의 종료 요청을 받았습니다.")
             if self.sink is None:
                 logger.error("Sink 인스턴스가 저장되지 않았습니다.")
-                await interaction.response.edit_message(
-                    content="❗ 녹음 세션이 활성화되지 않았습니다.",
-                    view=None
+                await interaction.response.send_message(
+                    "❗ 녹음 세션이 활성화되지 않았습니다.",
+                    ephemeral=True
                 )
                 return
+
+            # 녹음 중지
+            if self.ctx.voice_client:
+                self.ctx.voice_client.stop_recording()
+                logger.info("녹음이 중지되었습니다.")
+
             await filing(self.sink, self.ctx.channel, self.filename)
-            await interaction.response.edit_message(
-                content="🛑 회의가 종료되었습니다.\n녹음 파일이 정상적으로 저장되고 전송되었습니다. 수고하셨습니다!",
-                view=None
-            )
+            
+            try:
+                await interaction.response.edit_message(
+                    content="🛑 회의가 종료되었습니다.\n녹음 파일이 정상적으로 저장되고 전송되었습니다. 수고하셨습니다!",
+                    view=None
+                )
+            except discord.NotFound:
+                # 상호작용이 만료된 경우
+                await self.ctx.send(
+                    "🛑 회의가 종료되었습니다.\n녹음 파일이 정상적으로 저장되고 전송되었습니다. 수고하셨습니다!"
+                )
+                
             logger.info("회의 종료 메시지가 업데이트되었습니다.")
         except Exception as e:
-            logger.error(f"회의 종료 중 오류 발생: {e}")
-            await interaction.response.edit_message(
-                content="❗ 회의 종료 중 오류가 발생했습니다. 관리자에게 문의해주세요.",
-                view=None
-            )
+            logger.error(f"회의 종료 중 오류 발생: {e}", exc_info=True)
+            try:
+                await interaction.followup.send(
+                    "❗ 회의 종료 중 오류가 발생했습니다. 관리자에게 문의해주세요.",
+                    ephemeral=True
+                )
+            except:
+                await self.ctx.send(
+                    "❗ 회의 종료 중 오류가 발생했습니다. 관리자에게 문의해주세요."
+                )
 
 # MeetingView 클래스 외부에 정의된 함수들
 
 async def start_meeting(view, filename):
-    """
-    녹음을 시작하는 함수입니다.
-    """
     voice = view.ctx.author.voice
     if not voice:
         await view.ctx.send("❗ 음성 채널에 먼저 접속해주세요.")
@@ -193,15 +209,15 @@ async def start_meeting(view, filename):
         vc = channel.guild.voice_client
 
     sink = MySink()
-    view.sink = sink  # sink 인스턴스를 MeetingView에 저장
+    view.sink = sink
 
-    # 'finished_callback'을 포지셔널 인수로 전달
+    def callback(sink, *args):
+        return finished_recording(sink, view, filename)
+
+    # 콜백 함수 수정
     vc.start_recording(
         sink,
-        lambda sink, _: asyncio.run_coroutine_threadsafe(
-            finished_recording(sink, view, filename),
-            view.ctx.bot.loop
-        )
+        callback
     )
     logger.info("녹음이 시작되었습니다.")
 
@@ -209,6 +225,9 @@ async def finished_recording(sink, view, filename):
     """
     녹음이 종료되었을 때 호출되는 콜백 함수입니다.
     """
-    await view.ctx.voice_client.disconnect()
-    logger.info("녹음이 종료되고 음성 채널 연결이 해제되었습니다.")
-    # 'filing' 함수는 '회의종료' 버튼 클릭 시 호출되므로 여기서는 별도로 처리하지 않습니다.
+    try:
+        if view.ctx.voice_client:
+            await view.ctx.voice_client.disconnect()
+            logger.info("음성 채널 연결이 해제되었습니다.")
+    except Exception as e:
+        logger.error(f"음성 채널 연결 해제 중 오류 발생: {e}")

@@ -57,6 +57,15 @@ async def ping(ctx):
 async def on_ready():
     logger.info(f'{bot.user}로 로그인되었습니다!')
 
+@bot.event
+async def on_error(event, *args, **kwargs):
+    logger.error(f"Discord 이벤트 에러 발생: {event}", exc_info=True)
+
+@bot.event
+async def on_command_error(ctx, error):
+    logger.error(f"명령어 실행 중 에러 발생: {error}", exc_info=True)
+    await ctx.send("❗ 명령어 실행 중 오류가 발생했습니다. 관리자에게 문의해주세요.")
+
 # 토큰이 설정되지 않은 경우 에러 메시지 출력 후 종료
 if not TOKEN:
     logger.error("❗ DISCORD_TOKEN이 설정되지 않았습니다. .env 파일을 확인하세요.")
