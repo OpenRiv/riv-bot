@@ -1,1 +1,10 @@
+# .gitignore
+
+# 환경 변수 파일 제외
 .env
+
+# 로그 파일 제외
+bot.log
+
+# 녹음 파일 제외
+/recordings/
