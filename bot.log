@@ -1411,3 +1411,2335 @@ Loop thread traceback (most recent call last):
 2024-12-12 02:24:58,787:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
 2024-12-12 02:24:58,788:INFO:discord.client: All tasks finished cancelling.
 2024-12-12 02:24:58,788:INFO:discord.client: Closing the event loop.
+2024-12-12 02:31:25,156:INFO:discord.client: logging in using static token
+2024-12-12 02:31:26,080:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:31:26,399:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-7vq1",{"micros":56404,"calls":["id_created",{"micros":1031,"calls":[]},"session_lookup_time",{"micros":285,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-165",{"micros":53328,"calls":["start_session",{"micros":41615,"calls":["discord-api-rpc-cb657649d-dc4lw",{"micros":37281,"calls":["get_user",{"micros":7011},"get_guilds",{"micros":2301},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":668},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":32,"calls":[]},"presence_started",{"micros":350,"calls":[]},"guilds_started",{"micros":157,"calls":[]},"lobbies_started",{"micros":12,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":11130,"calls":[]},"connect_finished",{"micros":11136,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 0bb457ded031e44862b38b2357f9cdec).
+2024-12-12 02:31:29,663:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:31:38,216:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:31:38,219:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:31:38,220:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:31:38,220:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:31:38,221:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:31:38,221:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:31:38,222:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:31:38,222:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:31:38,588:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:31:40,480:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 02:31:40,481:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 02:31:40,481:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 02:31:40,481:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:31:40,482:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:31:40,929:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:31:41,149:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:31:41,179:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:31:41,182:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:31:41,182:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:31:41,544:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 02:31:56,563:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 02:31:57,113:INFO:discord: 회의 종료 메시지가 업데이트되었습니다.
+2024-12-12 02:36:07,337:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:36:07,338:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:36:07,339:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 02:36:07,340:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:36:07,341:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:36:07,341:INFO:discord.client: Closing the event loop.
+2024-12-12 02:37:37,028:INFO:discord.client: logging in using static token
+2024-12-12 02:37:38,238:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:37:38,561:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-qz51",{"micros":72841,"calls":["id_created",{"micros":1451,"calls":[]},"session_lookup_time",{"micros":6758,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-188",{"micros":63870,"calls":["start_session",{"micros":37223,"calls":["discord-api-rpc-cb657649d-l86ms",{"micros":33173,"calls":["get_user",{"micros":4868},"get_guilds",{"micros":4285},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":45,"calls":[]},"presence_started",{"micros":5671,"calls":[]},"guilds_started",{"micros":201,"calls":[]},"lobbies_started",{"micros":2,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":20694,"calls":[]},"connect_finished",{"micros":20703,"calls":[]},"build_ready",{"micros":21,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 3740d3356c9a3ffd78a815f6f7130043).
+2024-12-12 02:37:41,836:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:37:58,814:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:37:58,814:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:37:58,815:INFO:discord.client: Cleaning up after 2 tasks.
+2024-12-12 02:37:58,818:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:37:58,819:INFO:discord.client: Closing the event loop.
+2024-12-12 02:38:09,297:INFO:discord.client: logging in using static token
+2024-12-12 02:38:10,238:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:38:10,661:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-58z4",{"micros":166322,"calls":["id_created",{"micros":1071,"calls":[]},"session_lookup_time",{"micros":1692,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-110",{"micros":163138,"calls":["start_session",{"micros":127048,"calls":["discord-api-rpc-cb657649d-jp4vl",{"micros":120840,"calls":["get_user",{"micros":5367},"get_guilds",{"micros":12155},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":37,"calls":[]},"presence_started",{"micros":12512,"calls":[]},"guilds_started",{"micros":107,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":23409,"calls":[]},"connect_finished",{"micros":23415,"calls":[]},"build_ready",{"micros":16,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 2962a0937476bc0b3c084b8724e31682).
+2024-12-12 02:38:14,076:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:38:14,477:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:38:14,477:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:38:14,478:INFO:discord: 🔍 다른 사용자 목록: ['yuna_1028', 'youulaeria']
+2024-12-12 02:38:14,478:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:38:14,478:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:38:14,479:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:38:14,479:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:38:14,479:INFO:discord: 사용자 정의 회의명 설정 버튼이 추가되었습니다.
+2024-12-12 02:38:14,896:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:38:18,686:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 02:38:18,686:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 02:38:18,687:INFO:discord: 회의 파일명: 2024-12-12_frontend
+2024-12-12 02:38:18,688:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:38:18,688:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:38:19,197:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:38:19,415:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:38:19,445:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:38:19,498:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:38:19,500:INFO:discord: 회의 종료 버튼이 추가되었습니다.
+2024-12-12 02:38:19,860:INFO:discord: 회의 시작 메시지가 업데이트되었습니다.
+2024-12-12 02:38:36,026:INFO:discord: 회의 종료 요청을 받았습니다.
+2024-12-12 02:38:36,038:INFO:discord: 회의 참여자: {'423785467767685130': 'yuna_1028', '655556620822118430': 'youulaeria'}
+2024-12-12 02:38:36,044:INFO:discord: Starting audio transcription...
+2024-12-12 02:38:36,556:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 02:38:36,557:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.392740 seconds
+2024-12-12 02:38:37,436:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 02:38:37,437:INFO:openai._base_client: Retrying request to /audio/transcriptions in 0.921415 seconds
+2024-12-12 02:38:38,716:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 429 Too Many Requests"
+2024-12-12 02:38:38,718:WARNING:discord: Rate limit exceeded. Retrying in 2 seconds... (Attempt 1/5)
+2024-12-12 02:38:41,278:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2024-12-12 02:38:41,279:ERROR:discord: Error transcribing audio: Error code: 400 - {'error': {'message': "Invalid file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']", 'type': 'invalid_request_error', 'param': None, 'code': None}}
+2024-12-12 02:38:41,280:ERROR:discord: filing 함수에서 오류 발생: Error code: 400 - {'error': {'message': "Invalid file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']", 'type': 'invalid_request_error', 'param': None, 'code': None}}
+2024-12-12 02:38:41,635:ERROR:discord: 회의 종료 중 오류 발생: 404 Not Found (error code: 10062): Unknown interaction
+2024-12-12 02:38:41,736:INFO:discord: 임시 파일 temp_655556620822118430.wav이 삭제되었습니다.
+2024-12-12 02:45:31,265:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:45:31,266:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:45:31,266:INFO:discord.client: Cleaning up after 3 tasks.
+2024-12-12 02:45:31,267:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:45:31,269:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:45:31,269:INFO:discord.client: Closing the event loop.
+2024-12-12 02:47:56,305:INFO:discord.client: logging in using static token
+2024-12-12 02:47:57,154:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:47:57,487:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-21r9",{"micros":76822,"calls":["id_created",{"micros":611,"calls":[]},"session_lookup_time",{"micros":2410,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-1-37",{"micros":73503,"calls":["start_session",{"micros":35743,"calls":["discord-api-rpc-cb657649d-24vrt",{"micros":32053,"calls":["get_user",{"micros":5258},"get_guilds",{"micros":3425},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":0},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":40,"calls":[]},"presence_started",{"micros":300,"calls":[]},"guilds_started",{"micros":136,"calls":[]},"lobbies_started",{"micros":2,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":37256,"calls":[]},"connect_finished",{"micros":37261,"calls":[]},"build_ready",{"micros":18,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: a64f851c9646acdbc2c663de4fe9c7e6).
+2024-12-12 02:48:00,747:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:48:03,168:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:48:03,169:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:48:03,170:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:48:03,170:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:48:03,170:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:48:03,171:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:48:03,652:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:48:06,028:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 02:48:06,028:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 02:48:06,029:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:48:06,029:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:48:07,026:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:48:07,247:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:48:07,277:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:48:07,637:INFO:discord: 회의 시작 메시지가 업데이트되었습니다. 파일명: 2024-12-12_frontend
+2024-12-12 02:48:32,717:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-12 02:48:33,833:INFO:httpx: HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2024-12-12 02:48:33,835:ERROR:discord: Invalid file format: temp_423785467767685130.wav. Supported formats are ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']
+2024-12-12 02:48:33,836:ERROR:discord: filing 함수에서 오류 발생: Unsupported audio file format.
+2024-12-12 02:48:33,838:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:48:34,229:INFO:discord: 임시 파일 temp_655556620822118430.wav이 삭제되었습니다.
+2024-12-12 02:48:34,553:INFO:discord: 회의 종료: 2024-12-12_frontend
+2024-12-12 02:48:34,872:INFO:discord: 회의 종료 처리 완료. 파일명: 2024-12-12_frontend
+2024-12-12 02:51:14,995:INFO:discord.client: Received signal to terminate bot and event loop.
+2024-12-12 02:51:14,995:INFO:discord.client: Cleaning up tasks.
+2024-12-12 02:51:14,995:INFO:discord.client: Cleaning up after 1 tasks.
+2024-12-12 02:51:14,996:INFO:discord.client: All tasks finished cancelling.
+2024-12-12 02:51:14,997:INFO:discord.client: Closing the event loop.
+2024-12-12 02:56:18,375:INFO:discord.client: logging in using static token
+2024-12-12 02:56:19,190:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 02:56:19,743:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-lvt6",{"micros":290453,"calls":["id_created",{"micros":956,"calls":[]},"session_lookup_time",{"micros":340,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-1-157",{"micros":288900,"calls":["start_session",{"micros":265814,"calls":["discord-api-rpc-7fd57f86d-4mk9x",{"micros":259893,"calls":["get_user",{"micros":9167},"get_guilds",{"micros":11224},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":24},"authorized_ip_coro",{"micros":10}]}]},"starting_guild_connect",{"micros":40,"calls":[]},"presence_started",{"micros":8282,"calls":[]},"guilds_started",{"micros":153,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":14575,"calls":[]},"connect_finished",{"micros":14582,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: f6af8c72962b900578f4c833a05bab3c).
+2024-12-12 02:56:23,023:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 02:56:24,569:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 02:56:24,569:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 02:56:24,570:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 02:56:24,570:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 02:56:24,570:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 02:56:24,570:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 02:56:24,853:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 02:56:26,231:INFO:discord: Backend 역할로 회의를 시작합니다.
+2024-12-12 02:56:26,232:INFO:discord: 생성된 파일명: 2024-12-12_backend
+2024-12-12 02:56:26,232:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 02:56:26,233:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 02:56:26,678:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1065.discord.media
+2024-12-12 02:56:26,898:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 02:56:26,923:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 02:56:27,510:INFO:discord: 회의 시작 메시지가 업데이트되었습니다. 파일명: 2024-12-12_backend
+2024-12-12 02:56:37,442:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-12 02:56:37,457:INFO:discord: Validating audio file: temp_423785467767685130.wav - Channels: 2, Sample Rate: 48000
+2024-12-12 02:56:37,479:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 02:56:38,325:INFO:discord: 회의 종료: 2024-12-12_backend
+2024-12-12 02:56:39,664:INFO:discord: 회의 종료 처리 완료. 파일명: 2024-12-12_backend
+2024-12-12 03:01:48,748:INFO:discord.gateway: Websocket closed with WSCloseCode.OK, cannot reconnect.
+2024-12-12 03:01:48,749:ERROR:discord.client: Attempting a reconnect in 0.64s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 617, in connect
+    await self.ws.poll_event()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 630, in poll_event
+    raise ConnectionClosed(
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-12-12 03:01:49,998:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2024-12-12 03:01:50,307:INFO:discord.gateway: Shard ID None has successfully RESUMED session f6af8c72962b900578f4c833a05bab3c under trace ["gateway-prd-us-east1-d-m7xh",{"micros":649,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":365,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-1-157",{"micros":18}]}].
+2024-12-12 03:49:35,885:INFO:discord.gateway: Timed out receiving packet. Attempting a reconnect.
+2024-12-12 03:49:35,886:INFO:discord.client: Got a request to RESUME the websocket.
+2024-12-12 03:49:35,888:ERROR:discord.client: Attempting a reconnect in 0.56s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:49:36,490:ERROR:discord.client: Attempting a reconnect in 0.74s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:49:37,247:ERROR:discord.client: Attempting a reconnect in 2.28s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:49:39,533:ERROR:discord.client: Attempting a reconnect in 13.25s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:49:52,797:ERROR:discord.client: Attempting a reconnect in 18.00s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:50:10,811:ERROR:discord.client: Attempting a reconnect in 43.85s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:50:54,678:ERROR:discord.client: Attempting a reconnect in 121.00s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:52:55,697:ERROR:discord.client: Attempting a reconnect in 165.38s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:55:41,088:ERROR:discord.client: Attempting a reconnect in 37.38s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:56:18,483:ERROR:discord.client: Attempting a reconnect in 37.24s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 03:56:55,737:ERROR:discord.client: Attempting a reconnect in 248.82s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 04:01:04,579:ERROR:discord.client: Attempting a reconnect in 497.24s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 04:09:21,836:ERROR:discord.client: Attempting a reconnect in 927.77s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 04:24:49,617:ERROR:discord.client: Attempting a reconnect in 172.98s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 04:27:42,602:ERROR:discord.client: Attempting a reconnect in 140.55s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 04:30:03,157:ERROR:discord.client: Attempting a reconnect in 821.20s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 04:43:44,374:ERROR:discord.client: Attempting a reconnect in 722.83s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 04:55:47,208:ERROR:discord.client: Attempting a reconnect in 80.89s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 04:57:08,110:ERROR:discord.client: Attempting a reconnect in 454.14s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 05:04:42,260:ERROR:discord.client: Attempting a reconnect in 567.91s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 05:14:10,180:ERROR:discord.client: Attempting a reconnect in 951.58s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 05:30:01,770:ERROR:discord.client: Attempting a reconnect in 544.68s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 05:39:06,468:ERROR:discord.client: Attempting a reconnect in 860.64s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 05:53:27,120:ERROR:discord.client: Attempting a reconnect in 361.29s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 05:59:28,427:ERROR:discord.client: Attempting a reconnect in 75.08s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 06:00:43,534:ERROR:discord.client: Attempting a reconnect in 180.00s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 06:03:43,561:ERROR:discord.client: Attempting a reconnect in 135.87s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 06:05:59,446:ERROR:discord.client: Attempting a reconnect in 709.26s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 06:17:48,733:ERROR:discord.client: Attempting a reconnect in 692.65s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 06:29:21,390:ERROR:discord.client: Attempting a reconnect in 978.35s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 06:45:39,764:ERROR:discord.client: Attempting a reconnect in 970.36s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 07:01:50,138:ERROR:discord.client: Attempting a reconnect in 186.18s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 07:04:56,343:ERROR:discord.client: Attempting a reconnect in 655.41s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 07:15:51,770:ERROR:discord.client: Attempting a reconnect in 824.38s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 07:29:36,159:ERROR:discord.client: Attempting a reconnect in 785.51s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 07:42:41,677:ERROR:discord.client: Attempting a reconnect in 158.75s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 07:45:20,451:ERROR:discord.client: Attempting a reconnect in 938.58s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 08:00:59,053:ERROR:discord.client: Attempting a reconnect in 355.94s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 08:06:55,008:ERROR:discord.client: Attempting a reconnect in 952.67s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 08:22:47,694:ERROR:discord.client: Attempting a reconnect in 660.63s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 08:33:48,343:ERROR:discord.client: Attempting a reconnect in 239.67s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 08:37:48,026:ERROR:discord.client: Attempting a reconnect in 25.61s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 08:38:13,653:ERROR:discord.client: Attempting a reconnect in 174.86s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 08:41:08,523:ERROR:discord.client: Attempting a reconnect in 330.14s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 08:46:38,679:ERROR:discord.client: Attempting a reconnect in 883.19s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 09:01:21,885:ERROR:discord.client: Attempting a reconnect in 226.47s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 09:05:08,377:ERROR:discord.client: Attempting a reconnect in 708.86s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 09:16:57,260:ERROR:discord.client: Attempting a reconnect in 729.99s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 09:29:07,264:ERROR:discord.client: Attempting a reconnect in 178.60s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 09:32:05,883:ERROR:discord.client: Attempting a reconnect in 1001.01s
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1345, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1020, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\resolver.py", line 36, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\base_events.py", line 860, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\client.py", line 614, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\asyncio\tasks.py", line 445, in wait_for
+    return fut.result()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\gateway.py", line 338, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 3071, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\discord\http.py", line 286, in request
+    async with self.__session.request(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 1423, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\client.py", line 701, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\tori1\anaconda3\envs\infossu\lib\site-packages\aiohttp\connector.py", line 1351, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2024-12-12 22:07:16,991:INFO:discord.client: logging in using static token
+2024-12-12 22:07:18,096:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-12-12 22:07:18,477:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-39bq",{"micros":133646,"calls":["id_created",{"micros":537,"calls":[]},"session_lookup_time",{"micros":6289,"calls":[]},"session_lookup_finished",{"micros":20,"calls":[]},"discord-sessions-prd-1-55",{"micros":126555,"calls":["start_session",{"micros":65678,"calls":["discord-api-rpc-6577c5dfdd-plvnm",{"micros":57663,"calls":["get_user",{"micros":22357},"get_guilds",{"micros":3003},"send_scheduled_deletion_message",{"micros":5},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":15}]}]},"starting_guild_connect",{"micros":34,"calls":[]},"presence_started",{"micros":311,"calls":[]},"guilds_started",{"micros":112,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":60386,"calls":[]},"connect_finished",{"micros":60393,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: eaa11e129746aa424337d1eeb5a48dd0).
+2024-12-12 22:07:21,815:INFO:discord: 리브#7920로 로그인되었습니다!
+2024-12-12 22:07:44,204:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 22:07:44,205:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 22:07:44,205:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 22:07:44,205:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 22:07:44,205:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 22:07:44,206:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 22:07:44,529:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 22:07:52,541:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 22:07:52,541:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 22:07:52,542:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 22:07:52,542:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 22:07:52,999:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1059.discord.media
+2024-12-12 22:07:53,203:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 22:07:53,228:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 22:07:53,534:INFO:discord: 회의 시작 메시지가 업데이트되었습니다. 파일명: 2024-12-12_frontend
+2024-12-12 22:08:14,489:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-12 22:08:14,516:INFO:discord: Validating audio file: temp_423785467767685130.wav - Channels: 2, Sample Rate: 48000
+2024-12-12 22:08:14,518:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 22:08:15,289:INFO:discord: 회의 종료: 2024-12-12_frontend
+2024-12-12 22:08:15,584:INFO:discord: 회의 종료 처리 완료. 파일명: 2024-12-12_frontend
+2024-12-12 22:15:26,339:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 22:15:26,340:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 22:15:26,340:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 22:15:26,341:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 22:15:26,341:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 22:15:26,341:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 22:15:26,656:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 22:15:31,115:INFO:discord: Frontend 역할로 회의를 시작합니다.
+2024-12-12 22:15:31,116:INFO:discord: 생성된 파일명: 2024-12-12_frontend
+2024-12-12 22:15:31,116:INFO:discord.voice_client: Connecting to voice...
+2024-12-12 22:15:31,117:INFO:discord.voice_client: Starting voice handshake... (connection attempt 1)
+2024-12-12 22:15:31,569:INFO:discord.voice_client: Voice handshake complete. Endpoint found south-korea1059.discord.media
+2024-12-12 22:15:31,778:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-12 22:15:31,803:INFO:discord.gateway: received secret key for voice connection
+2024-12-12 22:15:32,119:INFO:discord: 회의 시작 메시지가 업데이트되었습니다. 파일명: 2024-12-12_frontend
+2024-12-12 22:15:45,160:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2024-12-12 22:15:45,184:INFO:discord: Validating audio file: temp_423785467767685130.wav - Channels: 2, Sample Rate: 48000
+2024-12-12 22:15:45,186:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-12 22:15:45,810:INFO:discord: 회의 종료: 2024-12-12_frontend
+2024-12-12 22:15:46,130:INFO:discord: 회의 종료 처리 완료. 파일명: 2024-12-12_frontend
+2024-12-12 22:17:32,543:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 22:17:32,543:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 22:17:32,544:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 22:17:32,544:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 22:17:32,544:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 22:17:32,545:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 22:17:33,006:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 22:18:56,121:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 22:18:56,121:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 22:18:56,122:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 22:18:56,122:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 22:18:56,123:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 22:18:56,123:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 22:18:56,466:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 22:19:29,315:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 22:19:29,315:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 22:19:29,315:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 22:19:29,316:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 22:19:29,316:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 22:19:29,316:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 22:19:29,647:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 22:19:49,250:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 22:19:49,252:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 22:19:49,252:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 22:19:49,252:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 22:19:49,253:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 22:19:49,253:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 22:19:49,551:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
+2024-12-12 22:20:19,470:INFO:discord: !회의 명령어가 호출되었습니다.
+2024-12-12 22:20:19,471:INFO:discord: checkAndInit 함수가 호출되었습니다.
+2024-12-12 22:20:19,471:INFO:discord: 버튼이 추가되었습니다: Frontend
+2024-12-12 22:20:19,471:INFO:discord: 버튼이 추가되었습니다: Design
+2024-12-12 22:20:19,472:INFO:discord: 버튼이 추가되었습니다: PM
+2024-12-12 22:20:19,472:INFO:discord: 버튼이 추가되었습니다: Backend
+2024-12-12 22:20:19,831:INFO:discord: 회의 카테고리 설정 안내 메시지가 수정되었습니다.
