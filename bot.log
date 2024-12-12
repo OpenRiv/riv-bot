@@ -1,0 +1,24 @@
+2024-12-13 03:19:57,509 - INFO - logging in using static token
+2024-12-13 03:19:58,405 - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-12-13 03:19:58,818 - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-x263",{"micros":162292,"calls":["id_created",{"micros":638,"calls":[]},"session_lookup_time",{"micros":9323,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-1-58",{"micros":152018,"calls":["start_session",{"micros":105167,"calls":["discord-api-rpc-d94844d9c-6ln4l",{"micros":100088,"calls":["get_user",{"micros":6083},"get_guilds",{"micros":12563},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":3293},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":39,"calls":[]},"presence_started",{"micros":37295,"calls":[]},"guilds_started",{"micros":198,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":9287,"calls":[]},"connect_finished",{"micros":9294,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 046328d7eca96027acecf02eb3d81c17).
+2024-12-13 03:20:02,123 - INFO - 봇 로그인 완료: 리브#7920
+2024-12-13 03:20:06,833 - INFO - 회의 명령어 실행 - 서버: DEV, 채널: test, 사용자: yuna_1028
+2024-12-13 03:20:06,833 - INFO - 서버 역할 기반 카테고리 버튼 생성 시작
+2024-12-13 03:20:10,758 - INFO - 사용자 yuna_1028 (유나)가 카테고리 'Backend' 선택
+2024-12-13 03:20:11,699 - INFO - 음성 채널 확인됨: Test
+2024-12-13 03:20:11,700 - INFO - Connecting to voice...
+2024-12-13 03:20:11,700 - INFO - Starting voice handshake... (connection attempt 1)
+2024-12-13 03:20:12,864 - INFO - Voice handshake complete. Endpoint found south-korea1054.discord.media
+2024-12-13 03:20:13,067 - INFO - selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-13 03:20:13,094 - INFO - received secret key for voice connection
+2024-12-13 03:20:13,095 - INFO - CustomSink 초기화됨
+2024-12-13 03:20:13,388 - INFO - 녹음 시작됨 - 서버: DEV, 채널: Test
+2024-12-13 03:21:33,303 - INFO - 사용자 yuna_1028 (유나)가 회의 종료 버튼 클릭
+2024-12-13 03:21:33,645 - INFO - Disconnecting from voice normally, close code 1000.
+2024-12-13 03:21:33,652 - INFO - CustomSink cleanup 실행
+2024-12-13 03:21:33,653 - INFO - 녹음 콜백 시작
+2024-12-13 03:21:33,678 - INFO - The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-13 03:21:33,679 - INFO - 녹음 중지됨 - 서버: DEV
+2024-12-13 03:21:57,212 - INFO - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1233 request_id=req_9df290d40117c7d7504172d3b08a226a response_code=200
+2024-12-13 03:21:57,908 - INFO - 회의록 생성 완료
+2024-12-13 03:21:57,911 - INFO - 서버 DEV의 녹음 세션 제거
