@@ -207,3 +207,8 @@
 2024-12-17 22:51:05,043 - ERROR - 서버 응답 JSON 파싱 실패: Expecting value: line 1 column 1 (char 0)
 2024-12-17 22:51:06,008 - ERROR - 서버 응답 JSON 파싱 실패: Expecting value: line 1 column 1 (char 0)
 2024-12-17 22:51:07,329 - INFO - 회의록 생성 및 업로드 완료
+2024-12-17 22:55:23,898 - INFO - Received signal to terminate bot and event loop.
+2024-12-17 22:55:23,898 - INFO - Cleaning up tasks.
+2024-12-17 22:55:23,899 - INFO - Cleaning up after 1 tasks.
+2024-12-17 22:55:23,900 - INFO - All tasks finished cancelling.
+2024-12-17 22:55:23,900 - INFO - Closing the event loop.
