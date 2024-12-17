@@ -329,8 +329,7 @@ async def update_status_message(message, status):
     """진행 상태를 메시지에 업데이트"""
     content = f"🔄 **진행 상태**: {status}"
     await message.edit(content=content)
-    
-    
+
 async def process_recording(sink, channel, meeting_title, members, start_time, end_time):
     """녹음 처리를 위한 비동기 함수"""
     try:
@@ -339,8 +338,10 @@ async def process_recording(sink, channel, meeting_title, members, start_time, e
         status_message = await channel.send("🔄 **진행 상태**: 녹음 데이터 병합 중...")
         await update_status_message(status_message, "녹음 데이터 병합 중...")
 
+        # 오디오 데이터 병합
         merged_audio = merge_audio(audio_data)
 
+        # Whisper API 전사
         await update_status_message(status_message, "Whisper API를 통해 전사 중...")
         transcription_text, segments = await transcribe_audio(merged_audio)
 
@@ -348,32 +349,43 @@ async def process_recording(sink, channel, meeting_title, members, start_time, e
             await update_status_message(status_message, "회의록 생성 실패: Whisper API 호출 실패")
             return
         
+        # 참석자 목록
         participants_list = "\n".join([f"- {member.display_name}" for member in members])
 
+        # 시작 및 종료 시간
         start_time_str = start_time.strftime("%Y-%m-%d %H:%M:%S")
         end_time_str = end_time.strftime("%Y-%m-%d %H:%M:%S")
 
+        # 텍스트 요약 생성
         await update_status_message(status_message, "회의 내용 요약 중...")
         summary = await summarize_text(transcription_text)
 
+        # 전체 회의 내용을 정제
+        await update_status_message(status_message, "전체 회의 내용 정제 중...")
+        full_content = await refine_full_content(transcription_text)
+
+        # 마크다운 형식으로 회의록 생성
         markdown_content = f"""# 회의록
 
         ## 기본 정보
-        - 시작 시간: {start_time_str}
-        - 종료 시간: {end_time_str}
-        - 회의 카테고리: {meeting_title}
+        - **시작 시간**: {start_time_str}
+        - **종료 시간**: {end_time_str}
+        - **회의 카테고리**: {meeting_title}
 
         ## 참석자
         {participants_list}
 
         ## 회의 내용 요약
         {summary}
+
+        ## 전체 회의 내용
+        {full_content}
         """
 
         # 회의록을 API에 업로드
         upload_success = await upload_minutes_to_api(
             title=meeting_title,
-            text=f"참석자 : {participants_list} \n\n{summary}",
+            text=markdown_content,  # 정제된 마크다운 형식의 회의록 내용
             category_name=meeting_title,
             start_time=start_time,
             end_time=end_time,
@@ -382,25 +394,24 @@ async def process_recording(sink, channel, meeting_title, members, start_time, e
         )
 
         if upload_success:
-            await channel.send("✅ 회의록이 서버에 성공적으로 업로드되었습니다!")
+            await channel.send("✅ **회의록이 서버에 성공적으로 업로드되었습니다!**")
         else:
-            await channel.send("⚠️ 회의록 업로드에 실패했습니다.")
+            await channel.send("⚠️ **회의록 업로드에 실패했습니다.**")
 
-        # 파일명 생성 및 디스코드 채널에도 전송
+        # 디스코드 채널에 회의록 파일 전송
         filename = f"{start_time.strftime('%Y%m%d_%H%M')}-{meeting_title}.md"
         minutes_buffer = io.BytesIO(markdown_content.encode('utf-8'))
         minutes_buffer.seek(0)
         minutes_file = discord.File(fp=minutes_buffer, filename=filename)
-        await channel.send("회의록이 생성되었습니다:", file=minutes_file)
+        await channel.send("📄 **회의록이 생성되었습니다:**", file=minutes_file)
 
         await update_status_message(status_message, "회의록 생성 및 업로드 완료")
-        logger.info("회의록 생성 완료")
+        logger.info("회의록 생성 및 업로드 완료")
 
     except Exception as e:
         logger.error(f"회의록 생성 중 오류 발생: {e}")
         await channel.send(f"회의록 생성 중 오류 발생: {str(e)}")
 
-    
 async def upload_minutes_to_api(title, text, category_name, start_time, end_time, server_id, channel_id):
     """회의록을 API에 업로드하는 함수"""
     url = 'https://3.37.89.101:443/recoding/unique'
@@ -409,7 +420,7 @@ async def upload_minutes_to_api(title, text, category_name, start_time, end_time
         "serverUniqueId": server_id,
         "channelUniqueId": channel_id,
         "title": title,
-        "text": text,
+        "text": text,  # 마크다운 형식의 회의록
         "categoryName": category_name,
         "startTime": start_time.strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
         "endTime": end_time.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
@@ -417,30 +428,34 @@ async def upload_minutes_to_api(title, text, category_name, start_time, end_time
 
     headers = {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'Authorization': 'Bearer YOUR_ACCESS_TOKEN'  # 필요한 경우 인증 토큰 입력
+        'Accept': 'application/json'
     }
 
     try:
-        print("\n=== 회의록 업로드 API 호출 ===")
-        print(f"URL: {url}")
-        print(f"Payload: {json.dumps(payload, indent=2, ensure_ascii=False)}")
+        logger.info("회의록 API에 업로드 중...")
+        response = requests.post(
+            url,
+            headers=headers,
+            json=payload,
+            verify=False,          # SSL 검증 비활성화
+            allow_redirects=False, # 리다이렉트 방지
+            timeout=30
+        )
 
-        response = requests.post(url, headers=headers, json=payload, verify=False, timeout=30)
+        logger.info(f"응답 코드: {response.status_code}")
+        logger.info(f"응답 내용: {response.text}")
 
-        print(f"응답 코드: {response.status_code}")
-        print(f"응답 내용: {response.text}")
-
+        # 상태 코드 확인
         if response.status_code == 200:
+            logger.info("회의록 업로드 성공")
             return True
         else:
-            logger.warning(f"회의록 업로드 실패: {response.text}")
+            logger.warning(f"회의록 업로드 실패. 응답 코드: {response.status_code}, 내용: {response.text}")
             return False
 
     except requests.exceptions.RequestException as e:
         logger.error(f"API 요청 중 오류 발생: {e}")
         return False
-
 
 async def update_status_message(message, status):
     """진행 상태를 메시지에 업데이트"""
@@ -468,6 +483,7 @@ async def 회의(ctx):
     """회의 시작 명령어
     사용 예시: !회의
     """
+
     logger.info(f"회의 명령어 실행 - 서버: {ctx.guild.name}, 채널: {ctx.channel.name}, 사용자: {ctx.author.name}")
 
     if not ctx.author.voice:
@@ -572,6 +588,34 @@ def merge_audio(audio_data):
 
     return wav_buffer
 
+async def refine_full_content(text):
+    """
+    OpenAI GPT-3.5-turbo를 사용하여 전체 회의 내용을 깔끔하게 정제하는 함수.
+    :param text: 원본 회의록 텍스트
+    :return: 정제된 전체 회의 내용
+    """
+    prompt = """
+    너는 회의록을 정리해주는 AI 어시스턴트야.
+    전체 회의 내용을 깔끔하고 일목요연하게 정제해줘. 발화된 내용 중 불필요한 반복이나 오류를 제거하고,
+    문장 흐름이 자연스럽도록 다듬어줘.
+    """
+
+    try:
+        response = await openai.ChatCompletion.acreate(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": prompt},
+                {"role": "user", "content": f"다음은 전사된 회의록입니다:\n\n{text}"}
+            ],
+            max_tokens=1000,
+            temperature=0.3
+        )
+        refined_text = response['choices'][0]['message']['content'].strip()
+        return refined_text
+    except Exception as e:
+        logger.error(f"전체 회의 내용 정제 중 오류 발생: {e}")
+        return "전체 회의 내용을 정제하는 중 오류가 발생했습니다."
+    
 async def summarize_text(text):
     """
     OpenAI GPT-3.5-turbo를 사용하여 텍스트를 요약하는 함수.
