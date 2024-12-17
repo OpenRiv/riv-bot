@@ -12,6 +12,10 @@ from dotenv import load_dotenv
 import time
 import requests
 from requests.exceptions import RequestException, Timeout
+import requests
+import json
+from datetime import datetime, timedelta
+
 
 # 환경 변수 로드
 load_dotenv()
@@ -209,7 +213,7 @@ class StopRecordingButton(discord.ui.Button):
         except Exception as e:
             logger.error(f"회의 종료 처리 중 오류 발생: {e}")
             await interaction.followup.send(f"회의 종료 중 오류가 발생했습니다: {str(e)}", ephemeral=True)
-            
+
 async def start_recording(guild, author, meeting_category, message):
     """회의 녹음을 시작하는 함수"""
     try:
@@ -325,76 +329,12 @@ async def update_status_message(message, status):
     """진행 상태를 메시지에 업데이트"""
     content = f"🔄 **진행 상태**: {status}"
     await message.edit(content=content)
-import aiohttp
-import json
-from typing import Optional, Tuple, Dict, Any
-import ssl
-
-async def upload_recording_to_server(channel, transcription_text, meeting_title, start_time, end_time) -> Tuple[bool, Optional[Dict[str, Any]]]:
-    """
-    회의록을 서버에 업로드하는 함수
     
-    Returns:
-        Tuple[bool, Optional[Dict[str, Any]]]: (성공 여부, 응답 데이터)
-    """
-    try:
-        base_url = 'https://3.37.89.101:443'
-        endpoint = '/recording/unique'
-        url = f"{base_url}{endpoint}"
-
-        payload = {
-            "serverUniqueId": str(channel.guild.id),
-            "channelUniqueId": str(channel.id),
-            "title": meeting_title,
-            "text": transcription_text,
-            "categoryName": meeting_title,
-            "startTime": start_time.isoformat() + "Z",
-            "endTime": end_time.isoformat() + "Z"
-        }
-
-        headers = {
-            'Content-Type': 'application/json',
-            'Accept': '*/*'
-        }
-
-        # SSL 컨텍스트 설정
-        ssl_context = ssl.create_default_context()
-        ssl_context.check_hostname = False
-        ssl_context.verify_mode = ssl.CERT_NONE
-
-        async with aiohttp.ClientSession() as session:
-            try:
-                async with session.post(url, json=payload, ssl=ssl_context, headers=headers, timeout=30) as response:
-                    response_text = await response.text()
-                    
-                    if response.status == 200:
-                        try:
-                            response_data = json.loads(response_text)
-                            logger.info(f"회의록 업로드 성공: {response_data}")
-                            return True, response_data
-                        except json.JSONDecodeError as je:
-                            logger.error(f"서버 응답 JSON 파싱 실패: {je}")
-                            return False, None
-                    else:
-                        logger.error(f"회의록 업로드 실패. 상태 코드: {response.status}, 응답: {response_text}")
-                        return False, None
-
-            except aiohttp.ClientError as ce:
-                logger.error(f"HTTP 요청 실패: {ce}")
-                return False, None
-            except asyncio.TimeoutError:
-                logger.error("서버 요청 시간 초과")
-                return False, None
-
-    except Exception as e:
-        logger.error(f"회의록 업로드 중 예외 발생: {e}")
-        return False, None
     
 async def process_recording(sink, channel, meeting_title, members, start_time, end_time):
     """녹음 처리를 위한 비동기 함수"""
     try:
         audio_data = sink.captured_audio
-        speaking_times = sink.capturing_speaking_times
 
         status_message = await channel.send("🔄 **진행 상태**: 녹음 데이터 병합 중...")
         await update_status_message(status_message, "녹음 데이터 병합 중...")
@@ -407,25 +347,7 @@ async def process_recording(sink, channel, meeting_title, members, start_time, e
         if transcription_text is None:
             await update_status_message(status_message, "회의록 생성 실패: Whisper API 호출 실패")
             return
-
-        await update_status_message(status_message, "발화자 매칭 중...")
         
-        # 발화자 매칭 및 그룹화
-        grouped_transcription = group_speaker_transcriptions(segments, speaking_times, members)
-
-        # 발화자별로 내용 합치기
-        speaker_contents = {}
-        for speaker, text in grouped_transcription:
-            if speaker not in speaker_contents:
-                speaker_contents[speaker] = []
-            speaker_contents[speaker].append(text)
-
-        # 합쳐진 내용으로 transcription_list 생성
-        transcription_list = "\n\n".join([
-            f"**{speaker}:** {' '.join(texts)}"
-            for speaker, texts in speaker_contents.items()
-        ])
-
         participants_list = "\n".join([f"- {member.display_name}" for member in members])
 
         start_time_str = start_time.strftime("%Y-%m-%d %H:%M:%S")
@@ -436,48 +358,33 @@ async def process_recording(sink, channel, meeting_title, members, start_time, e
 
         markdown_content = f"""# 회의록
 
-## 기본 정보
-- 시작 시간: {start_time_str}
-- 종료 시간: {end_time_str}
-- 회의 카테고리: {meeting_title}
+        ## 기본 정보
+        - 시작 시간: {start_time_str}
+        - 종료 시간: {end_time_str}
+        - 회의 카테고리: {meeting_title}
 
-## 참석자
-{participants_list}
+        ## 참석자
+        {participants_list}
 
-## 회의 내용 요약
-{summary}
+        ## 회의 내용 요약
+        {summary}
+        """
 
-## 상세 회의 내용
-{transcription_list}
-"""
-
-        # 서버에 회의록 업로드
-        await update_status_message(status_message, "회의록 서버 업로드 중...")
-        upload_success = await upload_recording_to_server(
-            channel,
-            markdown_content,
-            meeting_title,
-            start_time,
-            end_time
-        )
-
-        # 서버에 회의록 업로드
-        await update_status_message(status_message, "회의록 서버 업로드 중...")
-        upload_success, response_data = await upload_recording_to_server(
-            channel,
-            markdown_content,
-            meeting_title,
-            start_time,
-            end_time
+        # 회의록을 API에 업로드
+        upload_success = await upload_minutes_to_api(
+            title=meeting_title,
+            text=f"참석자 : {participants_list} \n\n{summary}",
+            category_name=meeting_title,
+            start_time=start_time,
+            end_time=end_time,
+            server_id=channel.guild.id,
+            channel_id=channel.id
         )
 
         if upload_success:
-            recording_id = response_data.get('data', {}).get('recordingId')
-            success_message = f"회의록 업로드 완료 (ID: {recording_id})" if recording_id else "회의록 업로드 완료"
-            await update_status_message(status_message, success_message)
+            await channel.send("✅ 회의록이 서버에 성공적으로 업로드되었습니다!")
         else:
-            await update_status_message(status_message, "회의록 업로드 실패")
-            await channel.send("❌ 서버 업로드에 실패했습니다. 로컬 파일로만 저장됩니다.")
+            await channel.send("⚠️ 회의록 업로드에 실패했습니다.")
 
         # 파일명 생성 및 디스코드 채널에도 전송
         filename = f"{start_time.strftime('%Y%m%d_%H%M')}-{meeting_title}.md"
@@ -487,40 +394,52 @@ async def process_recording(sink, channel, meeting_title, members, start_time, e
         await channel.send("회의록이 생성되었습니다:", file=minutes_file)
 
         await update_status_message(status_message, "회의록 생성 및 업로드 완료")
-        logger.info("회의록 생성 및 업로드 완료")
+        logger.info("회의록 생성 완료")
 
     except Exception as e:
         logger.error(f"회의록 생성 중 오류 발생: {e}")
         await channel.send(f"회의록 생성 중 오류 발생: {str(e)}")
 
-def group_speaker_transcriptions(segments, speaking_times, members):
-    """
-    발화 내용을 발화자별로 그룹화.
-    :param segments: Whisper API에서 반환한 세그먼트 정보
-    :param speaking_times: 사용자별 발화 시간 리스트
-    :param members: 음성 채널에 참여한 멤버 리스트
-    :return: 발화자와 해당 발화 텍스트의 리스트
-    """
-    # user_id와 display_name 매핑
-    speaker_map = {member.id: member.display_name for member in members}
-    grouped_transcription = []
+    
+async def upload_minutes_to_api(title, text, category_name, start_time, end_time, server_id, channel_id):
+    """회의록을 API에 업로드하는 함수"""
+    url = 'https://3.37.89.101:443/recoding/unique'
 
-    for segment in segments:
-        seg_start = segment['start']
-        seg_end = segment['end']
-        seg_text = segment['text'].strip()
+    payload = {
+        "serverUniqueId": server_id,
+        "channelUniqueId": channel_id,
+        "title": title,
+        "text": text,
+        "categoryName": category_name,
+        "startTime": start_time.strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
+        "endTime": end_time.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
+    }
 
-        # 발화자 매칭
-        speaker_id = match_speaker(seg_start, seg_end, speaking_times)
-        if speaker_id and speaker_id in speaker_map:
-            speaker_name = speaker_map[speaker_id]
+    headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Authorization': 'Bearer YOUR_ACCESS_TOKEN'  # 필요한 경우 인증 토큰 입력
+    }
+
+    try:
+        print("\n=== 회의록 업로드 API 호출 ===")
+        print(f"URL: {url}")
+        print(f"Payload: {json.dumps(payload, indent=2, ensure_ascii=False)}")
+
+        response = requests.post(url, headers=headers, json=payload, verify=False, timeout=30)
+
+        print(f"응답 코드: {response.status_code}")
+        print(f"응답 내용: {response.text}")
+
+        if response.status_code == 200:
+            return True
         else:
-            speaker_name = "알 수 없음"  # 매칭 실패 시 기본 값
+            logger.warning(f"회의록 업로드 실패: {response.text}")
+            return False
 
-        grouped_transcription.append((speaker_name, seg_text))
-
-    return grouped_transcription
-
+    except requests.exceptions.RequestException as e:
+        logger.error(f"API 요청 중 오류 발생: {e}")
+        return False
 
 
 async def update_status_message(message, status):
@@ -559,6 +478,7 @@ async def 회의(ctx):
     view = CategorySelectionView(ctx.guild, ctx.author)
     message = await ctx.send("회의 카테고리를 선택해주세요:", view=view)
     view.message = message  # View 내에서 메시지를 참조할 수 있도록 설정
+
 
 @bot.event
 async def on_message(message):
@@ -658,11 +578,19 @@ async def summarize_text(text):
     :param text: 요약할 텍스트
     :return: 요약된 텍스트
     """
+
+    prompt = """
+    너는 회의록을 요약해주는 AI 어시스턴스야.
+    주요 회의 내용을 한국어로 간결하게 개조식으로 요약해줘.
+    주요 결정사안에 대해선 맥락을 유지하며 더욱 자세하게 설명해줘.
+    """
+
     try:
         response = await openai.ChatCompletion.acreate(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are an assistant to help summarize the meeting records. Summarize the meeting in Korean, and summarize the main decisions."},
+                {
+                    "role": "system","content":prompt,},
                 {"role": "user", "content": f"Please summarize the following meeting transcript:\n\n{text}"}
             ],
             max_tokens=150,
