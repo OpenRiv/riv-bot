@@ -177,7 +177,6 @@ class StopRecordingView(discord.ui.View):
             item.disabled = True
         if self.message:
             await self.message.edit(view=self)
-
 class StopRecordingButton(discord.ui.Button):
     def __init__(self):
         super().__init__(style=discord.ButtonStyle.danger, label="🛑회의 종료", custom_id="stop_recording")
@@ -187,14 +186,30 @@ class StopRecordingButton(discord.ui.Button):
         if interaction.user != view.author:
             await interaction.response.send_message("이 버튼은 회의를 시작한 사용자만 사용할 수 있습니다.", ephemeral=True)
             return
+        
         await interaction.response.defer()
         logger.info(f"사용자 {interaction.user}가 회의 종료 버튼 클릭")
-        await interaction.followup.send("회의를 종료합니다...")
-        self.view.stop()
-        await stop_recording(view.guild, view.message.channel)
-        if view.message:  # message가 존재하는지 확인
-            await view.message.delete()  # await 추가
-
+        
+        try:
+            await interaction.followup.send("회의를 종료합니다...")
+            self.view.stop()
+            
+            # 녹음 중지 시도
+            await stop_recording(view.guild, view.message.channel)
+            
+            # 메시지 삭제 시도
+            if view.message:
+                try:
+                    await view.message.delete()
+                except discord.errors.NotFound:
+                    logger.warning("삭제할 메시지를 찾을 수 없습니다.")
+                except Exception as e:
+                    logger.error(f"메시지 삭제 중 오류 발생: {e}")
+        
+        except Exception as e:
+            logger.error(f"회의 종료 처리 중 오류 발생: {e}")
+            await interaction.followup.send(f"회의 종료 중 오류가 발생했습니다: {str(e)}", ephemeral=True)
+            
 async def start_recording(guild, author, meeting_category, message):
     """회의 녹음을 시작하는 함수"""
     try:
@@ -258,8 +273,6 @@ async def start_recording(guild, author, meeting_category, message):
         logger.error(error_msg)
         await message.channel.send(f"녹음을 시작할 수 없습니다: {e}")
 
-
-
 async def stop_recording(guild, channel):
     """회의 녹음을 중지하는 함수"""
     try:
@@ -270,9 +283,30 @@ async def stop_recording(guild, channel):
         if guild.voice_client:
             logger.debug("녹음 중지 시도")
             vc = guild.voice_client
-            vc.stop_recording()  # 이 호출은 콜백을 트리거합니다.
-            await vc.disconnect()
-            logger.info(f"녹음 중지됨 - 서버: {guild.name}")
+            
+            try:
+                # 녹음 중지 전에 녹음 상태 확인
+                if hasattr(vc, '_recording') and vc._recording:
+                    vc.stop_recording()  # 이 호출은 콜백을 트리거합니다.
+                    logger.info("녹음이 정상적으로 중지되었습니다.")
+                else:
+                    logger.warning("이미 녹음이 중지된 상태입니다.")
+            except discord.sinks.errors.RecordingException:
+                logger.warning("녹음이 이미 중지되었거나 진행 중이지 않습니다.")
+            except Exception as e:
+                logger.error(f"녹음 중지 중 예외 발생: {e}")
+            
+            try:
+                # voice client 연결 해제
+                await vc.disconnect()
+                logger.info(f"음성 채널 연결이 해제되었습니다.")
+            except Exception as e:
+                logger.error(f"음성 채널 연결 해제 중 오류: {e}")
+
+            # 녹음 세션 정리
+            if guild.id in recording_sessions:
+                del recording_sessions[guild.id]
+                logger.info(f"서버 {guild.name}의 녹음 세션이 제거되었습니다.")
 
     except Exception as e:
         error_msg = f"녹음을 중지하는 중 오류 발생: {e}"
@@ -291,6 +325,71 @@ async def update_status_message(message, status):
     """진행 상태를 메시지에 업데이트"""
     content = f"🔄 **진행 상태**: {status}"
     await message.edit(content=content)
+import aiohttp
+import json
+from typing import Optional, Tuple, Dict, Any
+import ssl
+
+async def upload_recording_to_server(channel, transcription_text, meeting_title, start_time, end_time) -> Tuple[bool, Optional[Dict[str, Any]]]:
+    """
+    회의록을 서버에 업로드하는 함수
+    
+    Returns:
+        Tuple[bool, Optional[Dict[str, Any]]]: (성공 여부, 응답 데이터)
+    """
+    try:
+        base_url = 'https://3.37.89.101:443'
+        endpoint = '/recording/unique'
+        url = f"{base_url}{endpoint}"
+
+        payload = {
+            "serverUniqueId": str(channel.guild.id),
+            "channelUniqueId": str(channel.id),
+            "title": meeting_title,
+            "text": transcription_text,
+            "categoryName": meeting_title,
+            "startTime": start_time.isoformat() + "Z",
+            "endTime": end_time.isoformat() + "Z"
+        }
+
+        headers = {
+            'Content-Type': 'application/json',
+            'Accept': '*/*'
+        }
+
+        # SSL 컨텍스트 설정
+        ssl_context = ssl.create_default_context()
+        ssl_context.check_hostname = False
+        ssl_context.verify_mode = ssl.CERT_NONE
+
+        async with aiohttp.ClientSession() as session:
+            try:
+                async with session.post(url, json=payload, ssl=ssl_context, headers=headers, timeout=30) as response:
+                    response_text = await response.text()
+                    
+                    if response.status == 200:
+                        try:
+                            response_data = json.loads(response_text)
+                            logger.info(f"회의록 업로드 성공: {response_data}")
+                            return True, response_data
+                        except json.JSONDecodeError as je:
+                            logger.error(f"서버 응답 JSON 파싱 실패: {je}")
+                            return False, None
+                    else:
+                        logger.error(f"회의록 업로드 실패. 상태 코드: {response.status}, 응답: {response_text}")
+                        return False, None
+
+            except aiohttp.ClientError as ce:
+                logger.error(f"HTTP 요청 실패: {ce}")
+                return False, None
+            except asyncio.TimeoutError:
+                logger.error("서버 요청 시간 초과")
+                return False, None
+
+    except Exception as e:
+        logger.error(f"회의록 업로드 중 예외 발생: {e}")
+        return False, None
+    
 async def process_recording(sink, channel, meeting_title, members, start_time, end_time):
     """녹음 처리를 위한 비동기 함수"""
     try:
@@ -347,24 +446,52 @@ async def process_recording(sink, channel, meeting_title, members, start_time, e
 
 ## 회의 내용 요약
 {summary}
+
+## 상세 회의 내용
+{transcription_list}
 """
 
-        # 파일명 생성 (YYYYMMDD_HHMM-카테고리명.md)
+        # 서버에 회의록 업로드
+        await update_status_message(status_message, "회의록 서버 업로드 중...")
+        upload_success = await upload_recording_to_server(
+            channel,
+            markdown_content,
+            meeting_title,
+            start_time,
+            end_time
+        )
+
+        # 서버에 회의록 업로드
+        await update_status_message(status_message, "회의록 서버 업로드 중...")
+        upload_success, response_data = await upload_recording_to_server(
+            channel,
+            markdown_content,
+            meeting_title,
+            start_time,
+            end_time
+        )
+
+        if upload_success:
+            recording_id = response_data.get('data', {}).get('recordingId')
+            success_message = f"회의록 업로드 완료 (ID: {recording_id})" if recording_id else "회의록 업로드 완료"
+            await update_status_message(status_message, success_message)
+        else:
+            await update_status_message(status_message, "회의록 업로드 실패")
+            await channel.send("❌ 서버 업로드에 실패했습니다. 로컬 파일로만 저장됩니다.")
+
+        # 파일명 생성 및 디스코드 채널에도 전송
         filename = f"{start_time.strftime('%Y%m%d_%H%M')}-{meeting_title}.md"
-        
         minutes_buffer = io.BytesIO(markdown_content.encode('utf-8'))
         minutes_buffer.seek(0)
-
         minutes_file = discord.File(fp=minutes_buffer, filename=filename)
         await channel.send("회의록이 생성되었습니다:", file=minutes_file)
 
-        await update_status_message(status_message, "회의록 생성 완료")
-        logger.info("회의록 생성 완료")
+        await update_status_message(status_message, "회의록 생성 및 업로드 완료")
+        logger.info("회의록 생성 및 업로드 완료")
 
     except Exception as e:
         logger.error(f"회의록 생성 중 오류 발생: {e}")
         await channel.send(f"회의록 생성 중 오류 발생: {str(e)}")
-
 
 def group_speaker_transcriptions(segments, speaking_times, members):
     """
@@ -535,23 +662,7 @@ async def summarize_text(text):
         response = await openai.ChatCompletion.acreate(
             model="gpt-3.5-turbo",
             messages=[
-                {
-                    "role": "system",
-                    "content": (
-                        "당신은 회의록을 생성하는 어시스턴트입니다. 다음 지침을 따르세요:\n"
-                        "1. 회의 내용을 한국어로 명확하고 간결하게 요약하세요.\n"
-                        "2. 마크다운(Markdown) 형식을 사용하여 개조식으로 작성하세요.\n"
-                        "3. 주요 결정사항이 있다면, 해당 결정의 맥락과 근거를 간략하게 설명하세요.\n"
-                        "4. 각 항목은 가독성을 높이기 위해 불릿 포인트(-)를 사용하세요.\n"
-                        "5. 이미 회의 날짜나 참여자는 기록되어 있으므로, 중복 기록은 피하세요.\n\n"
-                        "6. 결정사항이 없고, 간결하다면 요약해서 그냥 작성하세요."
-                        "- 주요 안건 1: ...\n"
-                        "- 주요 안건 2: ...\n\n"
-                        "## 결정사항\n"
-                        "- 결정사항 1: ... (맥락 및 근거)\n"
-                        "- 결정사항 2: ... (맥락 및 근거)"
-                    )
-                },
+                {"role": "system", "content": "You are an assistant to help summarize the meeting records. Summarize the meeting in Korean, and summarize the main decisions."},
                 {"role": "user", "content": f"Please summarize the following meeting transcript:\n\n{text}"}
             ],
             max_tokens=150,
@@ -562,5 +673,6 @@ async def summarize_text(text):
     except Exception as e:
         logger.error(f"요약 생성 중 오류 발생: {e}")
         return "요약 생성 중 오류가 발생했습니다."
+
 
 bot.run(TOKEN)

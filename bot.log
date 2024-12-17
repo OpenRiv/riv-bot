@@ -156,3 +156,54 @@
 2024-12-17 21:05:26,006 - INFO - Cleaning up after 1 tasks.
 2024-12-17 21:05:26,007 - INFO - All tasks finished cancelling.
 2024-12-17 21:05:26,008 - INFO - Closing the event loop.
+2024-12-17 22:46:27,991 - INFO - logging in using static token
+2024-12-17 22:46:28,543 - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-12-17 22:46:28,826 - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-219b",{"micros":88244,"calls":["id_created",{"micros":941,"calls":[]},"session_lookup_time",{"micros":6895,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-1-114",{"micros":80104,"calls":["start_session",{"micros":34589,"calls":["discord-api-rpc-64f777bb49-bp5xs",{"micros":30396,"calls":["get_user",{"micros":5167},"get_guilds",{"micros":3445},"send_scheduled_deletion_message",{"micros":11},"guild_join_requests",{"micros":222},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":66,"calls":[]},"presence_started",{"micros":9888,"calls":[]},"guilds_started",{"micros":159,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":35371,"calls":[]},"connect_finished",{"micros":35377,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 9c0311f82dfe0430213334ea73a4d254).
+2024-12-17 22:46:32,033 - INFO - 봇 로그인 완료: 리브#7920
+2024-12-17 22:46:36,255 - INFO - 회의 명령어 실행 - 서버: DEV, 채널: 채팅, 사용자: youulaeria
+2024-12-17 22:46:36,256 - INFO - 서버 역할 기반 카테고리 버튼 생성 시작
+2024-12-17 22:46:38,131 - INFO - 사용자 youulaeria (편유나)가 카테고리 'Backend' 선택
+2024-12-17 22:46:38,753 - INFO - 음성 채널 확인됨: Test
+2024-12-17 22:46:38,754 - INFO - Connecting to voice...
+2024-12-17 22:46:38,754 - INFO - Starting voice handshake... (connection attempt 1)
+2024-12-17 22:46:39,170 - INFO - Voice handshake complete. Endpoint found south-korea1121.discord.media
+2024-12-17 22:46:39,241 - INFO - selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-17 22:46:39,248 - INFO - received secret key for voice connection
+2024-12-17 22:46:39,249 - INFO - CustomSink 초기화됨
+2024-12-17 22:46:39,556 - INFO - 녹음 시작됨 - 서버: DEV, 채널: Test
+2024-12-17 22:47:05,159 - INFO - 사용자 youulaeria (편유나)가 회의 종료 버튼 클릭
+2024-12-17 22:47:05,464 - INFO - Disconnecting from voice normally, close code 1000.
+2024-12-17 22:47:05,472 - INFO - The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-17 22:47:05,474 - INFO - 녹음 중지됨 - 서버: DEV
+2024-12-17 22:50:27,833 - INFO - Received signal to terminate bot and event loop.
+2024-12-17 22:50:27,833 - INFO - Cleaning up tasks.
+2024-12-17 22:50:27,833 - INFO - Cleaning up after 1 tasks.
+2024-12-17 22:50:27,834 - INFO - All tasks finished cancelling.
+2024-12-17 22:50:27,835 - INFO - Closing the event loop.
+2024-12-17 22:50:30,059 - INFO - logging in using static token
+2024-12-17 22:50:30,625 - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-12-17 22:50:30,896 - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-bh66",{"micros":76205,"calls":["id_created",{"micros":899,"calls":[]},"session_lookup_time",{"micros":245,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-1-231",{"micros":73720,"calls":["start_session",{"micros":37985,"calls":["discord-api-rpc-64f777bb49-r4vs8",{"micros":33008,"calls":["get_user",{"micros":5169},"get_guilds",{"micros":2205},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":793},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":65,"calls":[]},"presence_started",{"micros":274,"calls":[]},"guilds_started",{"micros":146,"calls":[]},"lobbies_started",{"micros":2,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":35219,"calls":[]},"connect_finished",{"micros":35225,"calls":[]},"build_ready",{"micros":21,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: e8f191335e923735344bbce31746c7d9).
+2024-12-17 22:50:34,115 - INFO - 봇 로그인 완료: 리브#7920
+2024-12-17 22:50:34,857 - INFO - 회의 명령어 실행 - 서버: DEV, 채널: 채팅, 사용자: youulaeria
+2024-12-17 22:50:34,857 - INFO - 서버 역할 기반 카테고리 버튼 생성 시작
+2024-12-17 22:50:36,860 - INFO - 사용자 youulaeria (편유나)가 카테고리 'Backend' 선택
+2024-12-17 22:50:37,529 - INFO - 음성 채널 확인됨: Test
+2024-12-17 22:50:37,530 - INFO - Connecting to voice...
+2024-12-17 22:50:37,530 - INFO - Starting voice handshake... (connection attempt 1)
+2024-12-17 22:50:37,912 - INFO - Voice handshake complete. Endpoint found south-korea1121.discord.media
+2024-12-17 22:50:37,976 - INFO - selected the voice protocol for use (xsalsa20_poly1305_lite)
+2024-12-17 22:50:37,984 - INFO - received secret key for voice connection
+2024-12-17 22:50:37,985 - INFO - CustomSink 초기화됨
+2024-12-17 22:50:38,245 - INFO - 녹음 시작됨 - 서버: DEV, 채널: Test
+2024-12-17 22:50:53,817 - INFO - 사용자 youulaeria (편유나)가 회의 종료 버튼 클릭
+2024-12-17 22:50:54,277 - WARNING - 이미 녹음이 중지된 상태입니다.
+2024-12-17 22:50:54,278 - INFO - Disconnecting from voice normally, close code 1000.
+2024-12-17 22:50:54,286 - INFO - The voice handshake is being terminated for Channel ID 1313234174756524032 (Guild ID 1293406286301630474)
+2024-12-17 22:50:54,286 - INFO - 음성 채널 연결이 해제되었습니다.
+2024-12-17 22:50:54,287 - INFO - CustomSink cleanup 실행
+2024-12-17 22:50:54,287 - INFO - 서버 DEV의 녹음 세션이 제거되었습니다.
+2024-12-17 22:50:54,289 - INFO - 녹음 콜백 시작
+2024-12-17 22:51:03,991 - INFO - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=4439 request_id=req_9e5f16f1cf42fd431a6ff1ea0fca89e1 response_code=200
+2024-12-17 22:51:05,043 - ERROR - 서버 응답 JSON 파싱 실패: Expecting value: line 1 column 1 (char 0)
+2024-12-17 22:51:06,008 - ERROR - 서버 응답 JSON 파싱 실패: Expecting value: line 1 column 1 (char 0)
+2024-12-17 22:51:07,329 - INFO - 회의록 생성 및 업로드 완료
