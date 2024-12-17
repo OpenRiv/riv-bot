@@ -345,9 +345,6 @@ async def process_recording(sink, channel, meeting_title, members, start_time, e
 ## 참석자
 {participants_list}
 
-## 회의 내용
-{transcription_list}
-
 ## 회의 내용 요약
 {summary}
 """
@@ -538,7 +535,23 @@ async def summarize_text(text):
         response = await openai.ChatCompletion.acreate(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are an assistant to help summarize the meeting records. Summarize the meeting in Korean, and summarize the main decisions."},
+                {
+                    "role": "system",
+                    "content": (
+                        "당신은 회의록을 생성하는 어시스턴트입니다. 다음 지침을 따르세요:\n"
+                        "1. 회의 내용을 한국어로 명확하고 간결하게 요약하세요.\n"
+                        "2. 마크다운(Markdown) 형식을 사용하여 개조식으로 작성하세요.\n"
+                        "3. 주요 결정사항이 있다면, 해당 결정의 맥락과 근거를 간략하게 설명하세요.\n"
+                        "4. 각 항목은 가독성을 높이기 위해 불릿 포인트(-)를 사용하세요.\n"
+                        "5. 이미 회의 날짜나 참여자는 기록되어 있으므로, 중복 기록은 피하세요.\n\n"
+                        "6. 결정사항이 없고, 간결하다면 요약해서 그냥 작성하세요."
+                        "- 주요 안건 1: ...\n"
+                        "- 주요 안건 2: ...\n\n"
+                        "## 결정사항\n"
+                        "- 결정사항 1: ... (맥락 및 근거)\n"
+                        "- 결정사항 2: ... (맥락 및 근거)"
+                    )
+                },
                 {"role": "user", "content": f"Please summarize the following meeting transcript:\n\n{text}"}
             ],
             max_tokens=150,
